@@ -1,0 +1,9 @@
+RefDes,Footprint,Value,Net,Pad1_Pos_mm,Pad2_Pos_mm,Pitch_mm,Wire_Type,Current_Rating_A,Signal_Class,Purpose
+JMP1,WireJumper_P12.70mm_SingleLayer,Wire_Jumper_12.70mm,Net-(J1-MOSI),"(151.00, 111.67)","(151.00, 98.97)",12.70,24 AWG Solid Insulated Wire,3.5A,SIGNAL,"Cầu nhảy MOSI vượt qua chùm bus SPI (SCK, MISO) trên B.Cu tới chân ESP32 Pin 17"
+JMP2,WireJumper_P7.62mm_SingleLayer,Wire_Jumper_7.62mm,3V3_SYS,"(81.00, 61.81)","(81.00, 54.19)",7.62,24 AWG Solid Insulated Wire,3.5A,POWER,"Cầu nhảy 3V3_SYS vượt qua xương nguồn SIM_PWR (2.5mm) cấp cho R3 kéo lên nút CANCEL"
+JMP3,WireJumper_P7.62mm_SingleLayer,Wire_Jumper_7.62mm,Net-(U1-GPIO6),"(145.00, 61.73)","(145.00, 54.11)",7.62,24 AWG Solid Insulated Wire,3.5A,SIGNAL,"Cầu nhảy tín hiệu CANCEL vượt qua mạch cực Base Q1 còi báo động tới chân ESP32 Pin 6"
+JMP4,WireJumper_P10.16mm_SingleLayer,Wire_Jumper_10.16mm,/I2C_SDA_GPIO8,"(112.00, 98.58)","(112.00, 88.42)",10.16,24 AWG Solid Insulated Wire,3.5A,SIGNAL,"Cầu nhảy tín hiệu SDA vượt qua đường SCL (Y=91.50) sang nửa phía Nam"
+JMP5,WireJumper_P7.62mm_SingleLayer,Wire_Jumper_7.62mm,Net-(U1-GPIO6),"(124.00, 49.81)","(124.00, 42.19)",7.62,24 AWG Solid Insulated Wire,3.5A,SIGNAL,"Cầu nhảy tín hiệu CANCEL vượt qua đường nguồn 5V_SYS spine (Y=43.50) từ nút SW1"
+JMP6,WireJumper_P7.62mm_SingleLayer,Wire_Jumper_7.62mm,Net-(J1-MISO),"(139.27, 106.30)","(146.89, 106.30)",7.62,24 AWG Solid Insulated Wire,3.5A,SIGNAL,"Cầu nhảy tín hiệu MISO vượt qua chân 5V và chân GND của J1 MicroSD tới ESP32 Pin 19"
+JMP7,WireJumper_P10.16mm_SingleLayer,Wire_Jumper_10.16mm,3V3_SYS,"(80.00, 85.84)","(80.00, 96.00)",10.16,24 AWG Solid Insulated Wire,3.5A,POWER,"Cầu nhảy nguồn 3V3_SYS vượt qua đường bus I2C_SCL cấp cho DS3231 (U3.5) và MPU6050 (U2.1)"
+

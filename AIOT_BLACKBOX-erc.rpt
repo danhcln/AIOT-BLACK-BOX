@@ -1,0 +1,54 @@
+ERC report (2026-09-22T11:26:11, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(180.00 mm, 73.66 mm): Symbol #PWR01 Pin 1 [Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(180.00 mm, 127.00 mm): Symbol #PWR02 Pin 1 [Power input, Line]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Test_Symbols'
+    ; warning
+    @(80.00 mm, 100.00 mm): Symbol U1 [ESP32-S3-TEST]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.86 mm, 97.46 mm): Symbol U1 Pin P_SDA [GPIO8/SDA, Bidirectional, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.86 mm, 97.46 mm): Horizontal Wire, length 59.36 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(102.86 mm, 102.54 mm): Horizontal Wire, length 59.36 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 73.66 mm): Symbol #PWR01 Pin 1 [Power input, Line]
+[lib_symbol_mismatch]: Symbol '+3V3' doesn't match copy in library 'power'
+    ; warning
+    @(180.00 mm, 73.66 mm): Symbol #PWR01 [+3V3]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 80.95 mm): Vertical Wire, length 7.29 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 80.95 mm): Symbol U2 Pin P_VCC [VCC, Power input, Line]
+[lib_symbol_issues]: The current configuration does not include the symbol library 'Test_Symbols'
+    ; warning
+    @(180.00 mm, 100.00 mm): Symbol U2 [IMU-TEST]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 119.05 mm): Vertical Wire, length 7.95 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(180.00 mm, 127.00 mm): Symbol #PWR02 Pin 1 [Power input, Line]
+[lib_symbol_mismatch]: Symbol 'GND' doesn't match copy in library 'power'
+    ; warning
+    @(180.00 mm, 127.00 mm): Symbol #PWR02 [GND]
+
+ ** ERC messages: 14  Errors 2  Warnings 12
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

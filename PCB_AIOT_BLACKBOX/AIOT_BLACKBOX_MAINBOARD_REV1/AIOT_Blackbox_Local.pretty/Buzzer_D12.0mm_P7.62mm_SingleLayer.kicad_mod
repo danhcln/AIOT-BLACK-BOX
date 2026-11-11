@@ -1,0 +1,60 @@
+(footprint "Buzzer_D12.0mm_P7.62mm_SingleLayer"
+  (version 20240108)
+  (generator "pcbnew")
+  (generator_version "8.0")
+  (layer "F.Cu")
+  (descr "Verified 12mm THT Active Buzzer P7.62mm (Pad 1=+, Pad 2=-)")
+  (tags "Buzzer 12mm THT")
+  (property "Reference" "REF**"
+    (at 0 -7.200 0)
+    (layer "F.SilkS")
+    (uuid "dde4d664-24bb-4611-bc82-cef4fc1cce40")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Value" "Buzzer_D12.0mm_P7.62mm_SingleLayer"
+    (at 0 7.200 0)
+    (layer "F.Fab")
+    (uuid "9df9fe55-fcc7-40f6-b514-ffe227c490dd")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (attr through_hole)
+  (fp_circle (center 0 0) (end 6.0 0) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (uuid "ad8e6890-bef3-41a8-9085-e100c6786b2d"))
+  (fp_text user "+" (at -3.81 -2.8 0) (layer "F.SilkS") (uuid "7b71e867-3ae8-4e93-b678-1662bc0962b3") (effects (font (size 1.2 1.2) (thickness 0.2))))
+  (fp_rect
+    (start -6.500 -6.500)
+    (end 6.500 6.500)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "0ec2f105-749d-435c-ad5a-39e206283e47")
+  )
+  (pad "1" thru_hole rect
+    (at -3.810 0.000)
+    (size 2.400 2.400)
+    (drill 1.000)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "2a2433b7-e780-4dd9-80e4-e2fb28e1fe5c")
+  )
+  (pad "2" thru_hole oval
+    (at 3.810 0.000)
+    (size 2.400 2.400)
+    (drill 1.000)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "e5ccb622-20fe-4be7-a155-b2e23414d7ae")
+  )
+)

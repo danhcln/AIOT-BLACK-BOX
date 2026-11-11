@@ -1,0 +1,369 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-18T21:47:18",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/23e01810-75f5-4bd2-b588-056ab4630d64",
+            "violations": [
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol J2 Pin A4 [VBUS, Power output, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.0414
+                            },
+                            "uuid": "2c3d44a0-a92b-4dc9-a4cc-808a77523777"
+                        },
+                        {
+                            "description": "Symbol J2 Pin B9 [VBUS, Power output, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.0668
+                            },
+                            "uuid": "36805f8f-6568-4e62-ac70-f0df93ba0376"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 5 [OV1, Input, Line]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.9144
+                            },
+                            "uuid": "81b32be4-039b-4dab-99e3-ce260b24922f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 5 [OV1, Input, Line]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.9144
+                            },
+                            "uuid": "81b32be4-039b-4dab-99e3-ce260b24922f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 4 [OV2, Input, Line]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.9398
+                            },
+                            "uuid": "51b919e4-dd6e-4ec6-99e3-5edbb6b0efb6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 4 [OV2, Input, Line]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.9398
+                            },
+                            "uuid": "51b919e4-dd6e-4ec6-99e3-5edbb6b0efb6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 12 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 1.016
+                            },
+                            "uuid": "069a1b55-39b6-42ad-852a-40d4a0de34c2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 12 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 1.016
+                            },
+                            "uuid": "069a1b55-39b6-42ad-852a-40d4a0de34c2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 1 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 1.778,
+                                "y": 0.7874
+                            },
+                            "uuid": "5280199d-2ef3-4b32-8ddf-e019ccda9b08"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 8 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 1.778,
+                                "y": 0.8128
+                            },
+                            "uuid": "5534d3c8-1e16-42b3-82bf-67e61923817b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pins of type Open collector and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 9 [ST, Open collector, Line]",
+                            "pos": {
+                                "x": 1.778,
+                                "y": 0.9144
+                            },
+                            "uuid": "13917b4b-c22a-4a8c-b1a9-9f1fdd4127d0"
+                        },
+                        {
+                            "description": "Symbol #FLG Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 2.286,
+                                "y": 0.9398
+                            },
+                            "uuid": "d174a536-c362-4409-a040-7db76cfe33fc"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 1.0287
+                            },
+                            "uuid": "327b9952-6169-4938-95a9-38e1d5adcd36"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'VBUS_MUX' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 1.0287
+                            },
+                            "uuid": "327b9952-6169-4938-95a9-38e1d5adcd36"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Symbol 'USB_C_16P' not found in symbol library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [USB_C_16P]",
+                            "pos": {
+                                "x": 0.3048,
+                                "y": 1.143
+                            },
+                            "uuid": "e3b5e4d3-9f3c-4611-bb54-87e4ccd89dc9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.1016 mm",
+                            "pos": {
+                                "x": 1.27,
+                                "y": 0.508
+                            },
+                            "uuid": "d63cbd20-f003-40cc-b120-7f03b84db6ec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0381 mm",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.9144
+                            },
+                            "uuid": "99f27dff-83ae-4218-9cbf-a7f7d10cce23"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0381 mm",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.9398
+                            },
+                            "uuid": "0c1ac80f-1c7d-4689-9def-1ad8ccf1e50b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0381 mm",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 1.016
+                            },
+                            "uuid": "435ddf36-716a-4b59-a822-4a35076dd402"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Footprint 'Texas_RUX0012A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "74a0ec6f-c771-42fb-84c2-390028c1099e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS2121RUXR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "74a0ec6f-c771-42fb-84c2-390028c1099e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.2286 mm",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.9779
+                            },
+                            "uuid": "33dc062c-eb3f-4bbe-affc-b5701286dbe2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Both MUX_ST and VBUS_MUX are attached to the same items; MUX_ST will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Global Label 'MUX_ST'",
+                            "pos": {
+                                "x": 1.8796,
+                                "y": 0.635
+                            },
+                            "uuid": "0a2865ac-2698-4d61-9180-a7a989352dd1"
+                        },
+                        {
+                            "description": "Global Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 0.9779
+                            },
+                            "uuid": "9ea42abe-6b30-428e-9715-f6640ab5fd33"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        }
+    ],
+    "source": "test_s1_perf.kicad_sch"
+}

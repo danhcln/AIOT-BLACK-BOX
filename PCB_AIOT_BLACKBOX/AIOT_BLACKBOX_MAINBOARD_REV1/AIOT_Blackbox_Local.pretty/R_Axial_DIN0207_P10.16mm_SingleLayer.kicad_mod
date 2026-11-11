@@ -1,0 +1,61 @@
+(footprint "R_Axial_DIN0207_P10.16mm_SingleLayer"
+  (version 20240108)
+  (generator "pcbnew")
+  (generator_version "8.0")
+  (layer "F.Cu")
+  (descr "Verified 1/4W Axial Resistor P10.16mm for Single-Layer PCB")
+  (tags "resistor axial THT")
+  (property "Reference" "REF**"
+    (at 0 -2.500 0)
+    (layer "F.SilkS")
+    (uuid "373ec493-50a1-4e75-a1b3-befcc2e8f87e")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Value" "R_Axial_DIN0207_P10.16mm_SingleLayer"
+    (at 0 2.500 0)
+    (layer "F.Fab")
+    (uuid "7226899c-231a-4ae4-8dff-ef3d2bbeef4a")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (attr through_hole)
+  (fp_rect (start -3.2 -1.4) (end 3.2 1.4) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (uuid "3fa7b3ba-8c70-4ef1-b15f-ca1a9a508b93"))
+  (fp_line (start -3.8 0) (end -3.2 0) (stroke (width 0.15) (type default)) (layer "F.SilkS") (uuid "b25ba11e-a084-4e05-ad6f-4e0e3d3fff8e"))
+  (fp_line (start 3.2 0) (end 3.8 0) (stroke (width 0.15) (type default)) (layer "F.SilkS") (uuid "8d3c551b-05e3-4678-99ff-ebfed98d19cc"))
+  (fp_rect
+    (start -6.500 -1.800)
+    (end 6.500 1.800)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "34e22202-281d-42cf-a418-92d384a9e21b")
+  )
+  (pad "1" thru_hole rect
+    (at -5.080 0.000)
+    (size 2.200 2.200)
+    (drill 0.900)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "d924a338-05dd-45d4-ba58-72dc50bfbefd")
+  )
+  (pad "2" thru_hole oval
+    (at 5.080 0.000)
+    (size 2.200 2.200)
+    (drill 0.900)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "91053200-534d-4026-87e4-52cb39fe5c4b")
+  )
+)

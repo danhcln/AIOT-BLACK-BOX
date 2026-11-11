@@ -1,0 +1,247 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-18T22:38:28",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/30cc347b-3baf-42ca-86d8-a6f38b593edb",
+            "violations": [
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'SYS'",
+                            "pos": {
+                                "x": 0.254,
+                                "y": 0.8255
+                            },
+                            "uuid": "4d85273b-7103-43d1-ba0d-2ce2fc9b8ed4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'SYS' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'SYS'",
+                            "pos": {
+                                "x": 0.254,
+                                "y": 0.8255
+                            },
+                            "uuid": "4d85273b-7103-43d1-ba0d-2ce2fc9b8ed4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 1.0795
+                            },
+                            "uuid": "3f4bb9f8-e5af-4697-99fa-a3e099f14d7c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 9 [VIN, Power input, Line]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.7747
+                            },
+                            "uuid": "373d6ac9-e5fb-4e50-ab98-3b708b3a21b9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label '5V_SYS'",
+                            "pos": {
+                                "x": 1.7526,
+                                "y": 0.6223
+                            },
+                            "uuid": "0fc7c3aa-513c-4278-930c-be375e347ec6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label '5V_SYS' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label '5V_SYS'",
+                            "pos": {
+                                "x": 1.7526,
+                                "y": 0.6223
+                            },
+                            "uuid": "0fc7c3aa-513c-4278-930c-be375e347ec6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label '3V3_SYS'",
+                            "pos": {
+                                "x": 2.7686,
+                                "y": 0.9779
+                            },
+                            "uuid": "3aaae023-fcc0-4076-9c8a-84f5efe81edf"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label '3V3_SYS' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label '3V3_SYS'",
+                            "pos": {
+                                "x": 2.7686,
+                                "y": 0.9779
+                            },
+                            "uuid": "3aaae023-fcc0-4076-9c8a-84f5efe81edf"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Footprint 'L_Bourns_SRP6540' not found in library 'Inductor_SMD'",
+                    "items": [
+                        {
+                            "description": "Symbol L2 [L]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.8255
+                            },
+                            "uuid": "cf8d3005-13a6-440e-a7be-4691d097aa42"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Footprint 'Texas_RHL0020A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [TPS61088RHLR]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.9525
+                            },
+                            "uuid": "5cb29245-e8fb-40f9-bb6a-a171841e538b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS61088RHLR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [TPS61088RHLR]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.9525
+                            },
+                            "uuid": "5cb29245-e8fb-40f9-bb6a-a171841e538b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm' not found in library 'Package_SON'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [TPS62162DSGR]",
+                            "pos": {
+                                "x": 2.159,
+                                "y": 0.9525
+                            },
+                            "uuid": "02e60df7-ecb4-4aa6-805e-3cde73ba3ee9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS62162DSGR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [TPS62162DSGR]",
+                            "pos": {
+                                "x": 2.159,
+                                "y": 0.9525
+                            },
+                            "uuid": "02e60df7-ecb4-4aa6-805e-3cde73ba3ee9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'L_Bourns_SRP4020TA' not found in library 'Inductor_SMD'",
+                    "items": [
+                        {
+                            "description": "Symbol L3 [L]",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 0.9271
+                            },
+                            "uuid": "faae9d5b-131a-4dac-8e32-7ea4a4d4d2cc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        }
+    ],
+    "source": "03_BOOST_BUCK_RAILS.kicad_sch"
+}

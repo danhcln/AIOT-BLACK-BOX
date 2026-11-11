@@ -1,0 +1,217 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-18T21:46:17",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/96b02e1a-3859-4f17-8c52-930a9d187a46",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol R90 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 0.97,
+                                "y": 0.98
+                            },
+                            "uuid": "8f962d82-7f3c-4286-bfda-3991b2a97862"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol R180 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 0.98,
+                                "y": 1.03
+                            },
+                            "uuid": "21a6951c-6dad-4e8f-99a9-0408080b9d3b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol R0 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 1.02,
+                                "y": 0.97
+                            },
+                            "uuid": "f7ebfb20-c9d8-4393-8daa-b053695e7f02"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol R270 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 1.03,
+                                "y": 1.02
+                            },
+                            "uuid": "e73aad05-1670-4293-9ad8-10b22aa6caa8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R90 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 0.97,
+                                "y": 0.98
+                            },
+                            "uuid": "8f962d82-7f3c-4286-bfda-3991b2a97862"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R180 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 0.98,
+                                "y": 1.03
+                            },
+                            "uuid": "21a6951c-6dad-4e8f-99a9-0408080b9d3b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'R' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol R270 [R]",
+                            "pos": {
+                                "x": 1.0,
+                                "y": 1.0
+                            },
+                            "uuid": "038c7e9a-bcdf-4129-b3e8-0622681dc704"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'R' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol R180 [R]",
+                            "pos": {
+                                "x": 1.0,
+                                "y": 1.0
+                            },
+                            "uuid": "5f47f180-0b7f-47f1-9208-3fce9f6c45f4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'R' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol R0 [R]",
+                            "pos": {
+                                "x": 1.0,
+                                "y": 1.0
+                            },
+                            "uuid": "caf8faa4-8ff0-400e-8cbd-b201edc5733a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'R' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol R90 [R]",
+                            "pos": {
+                                "x": 1.0,
+                                "y": 1.0
+                            },
+                            "uuid": "e8f4aa36-8f1b-4002-8b40-f703a7a96b99"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R0 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 1.02,
+                                "y": 0.97
+                            },
+                            "uuid": "f7ebfb20-c9d8-4393-8daa-b053695e7f02"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol R270 Pin 1 [~, Passive, Line]",
+                            "pos": {
+                                "x": 1.03,
+                                "y": 1.02
+                            },
+                            "uuid": "e73aad05-1670-4293-9ad8-10b22aa6caa8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                }
+            ]
+        }
+    ],
+    "source": "test_asym.kicad_sch"
+}

@@ -1,0 +1,342 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-18T22:48:34",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b5fa1201-3431-41b0-99ee-94dd7266aaaf",
+            "violations": [
+                {
+                    "description": "Symbol 'USB_C_16P' not found in symbol library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [USB_C_16P]",
+                            "pos": {
+                                "x": 0.3048,
+                                "y": 1.143
+                            },
+                            "uuid": "8269d3cb-92d5-444c-8713-fdb2a9867b7e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'Texas_RUX0012A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "18eca5ae-50a7-476c-9ca6-c0737bbf3483"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS2121RUXR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "18eca5ae-50a7-476c-9ca6-c0737bbf3483"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'DW01A' doesn't match copy in library 'Battery_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [DW01A]",
+                            "pos": {
+                                "x": 0.6604,
+                                "y": 0.8636
+                            },
+                            "uuid": "17ccca18-61da-4e41-9c08-e882a3742b19"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'FS8205A' not found in symbol library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [FS8205A]",
+                            "pos": {
+                                "x": 1.016,
+                                "y": 0.8636
+                            },
+                            "uuid": "ee8e4e8d-605e-4ec8-a873-c050fbe875b7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'FS8205A' not found in symbol library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q2 [FS8205A]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 0.8636
+                            },
+                            "uuid": "7285953e-c8bc-4516-aa90-788e89155e7e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'Texas_RTW0024A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [BQ25895RTWR]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 0.9652
+                            },
+                            "uuid": "3b1ad488-c41c-4080-9f34-59c54c31b1df"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'BQ25895RTWR' not found in symbol library 'Battery_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [BQ25895RTWR]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 0.9652
+                            },
+                            "uuid": "3b1ad488-c41c-4080-9f34-59c54c31b1df"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'L_Bourns_SRP6540' not found in library 'Inductor_SMD'",
+                    "items": [
+                        {
+                            "description": "Symbol L1 [L]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 0.7874
+                            },
+                            "uuid": "4924701a-9b8e-4a79-9539-ff86eaf4d94d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'AO3401A' doesn't match copy in library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q3 [AO3401A]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.508
+                            },
+                            "uuid": "e9131609-6a2a-4d16-a4dc-9bb616bb7090"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Footprint 'Texas_RGT0016A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [TPS62130RGTR]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 1.143
+                            },
+                            "uuid": "ec7e443e-3611-4345-a47a-776145c01bed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS62130RGTR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [TPS62130RGTR]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 1.143
+                            },
+                            "uuid": "ec7e443e-3611-4345-a47a-776145c01bed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'L_Bourns_SRP6540' not found in library 'Inductor_SMD'",
+                    "items": [
+                        {
+                            "description": "Symbol L4 [L]",
+                            "pos": {
+                                "x": 1.1938,
+                                "y": 1.0414
+                            },
+                            "uuid": "c8f4ff54-b716-43d1-9d9f-5e4a7bab2d3e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Footprint 'L_Bourns_SRP6540' not found in library 'Inductor_SMD'",
+                    "items": [
+                        {
+                            "description": "Symbol L2 [L]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.8255
+                            },
+                            "uuid": "1ae44e43-b0f1-493d-95f1-535ba8bc9b6b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Footprint 'Texas_RHL0020A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [TPS61088RHLR]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.9525
+                            },
+                            "uuid": "28387ce4-bbb0-4ede-81ed-1d9f9edee346"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS61088RHLR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [TPS61088RHLR]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 0.9525
+                            },
+                            "uuid": "28387ce4-bbb0-4ede-81ed-1d9f9edee346"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm' not found in library 'Package_SON'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [TPS62162DSGR]",
+                            "pos": {
+                                "x": 2.159,
+                                "y": 0.9525
+                            },
+                            "uuid": "8d1eb0e8-5ade-4c8e-8c60-54ad76d684e1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS62162DSGR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [TPS62162DSGR]",
+                            "pos": {
+                                "x": 2.159,
+                                "y": 0.9525
+                            },
+                            "uuid": "8d1eb0e8-5ade-4c8e-8c60-54ad76d684e1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'L_Bourns_SRP4020TA' not found in library 'Inductor_SMD'",
+                    "items": [
+                        {
+                            "description": "Symbol L3 [L]",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 0.9271
+                            },
+                            "uuid": "87c69143-c737-46a0-8ba9-dbe4b8aeb11a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        },
+        {
+            "path": "/01_INPUT_SELECTION/",
+            "uuid_path": "/b5fa1201-3431-41b0-99ee-94dd7266aaaf/ac6c0133-3018-4192-ab5f-3e5e5f750e09",
+            "violations": []
+        },
+        {
+            "path": "/02_CHARGER_BATTERY/",
+            "uuid_path": "/b5fa1201-3431-41b0-99ee-94dd7266aaaf/c1acbbbf-69f9-4358-9a24-f22e1f22f94c",
+            "violations": []
+        },
+        {
+            "path": "/04_SIM_POWER_OUTPUTS/",
+            "uuid_path": "/b5fa1201-3431-41b0-99ee-94dd7266aaaf/f46fb42f-ac9b-4a0b-9370-e3358846b2c3",
+            "violations": []
+        },
+        {
+            "path": "/03_BOOST_BUCK_RAILS/",
+            "uuid_path": "/b5fa1201-3431-41b0-99ee-94dd7266aaaf/578203e2-4173-4bd5-8707-1f0c5ed0728e",
+            "violations": []
+        }
+    ],
+    "source": "AIOT_BLACKBOX_POWER_SUPPLY.kicad_sch"
+}

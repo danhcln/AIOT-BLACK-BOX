@@ -1,0 +1,15 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "11111111-2222-3333-4444-555555555555")
+	(paper "A4")
+	(title_block
+		(title "TEST TITLE")
+		(date "2026-09-22")
+		(rev "1.0")
+		(company "TEST COMPANY")
+		(comment 1 "GVHD: TEST")
+		(comment 2 "SVTH: TEST")
+	)
+)

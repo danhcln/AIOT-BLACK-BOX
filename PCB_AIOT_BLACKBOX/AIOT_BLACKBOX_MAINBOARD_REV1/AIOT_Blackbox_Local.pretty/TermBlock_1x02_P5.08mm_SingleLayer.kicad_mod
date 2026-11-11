@@ -1,0 +1,61 @@
+(footprint "TermBlock_1x02_P5.08mm_SingleLayer"
+  (version 20240108)
+  (generator "pcbnew")
+  (generator_version "8.0")
+  (layer "F.Cu")
+  (descr "Verified 2-Pin 5.08mm Screw Terminal Block for Single-Layer PCB (3A Rated)")
+  (tags "terminal power 5.08mm")
+  (property "Reference" "REF**"
+    (at 0 -5.200 0)
+    (layer "F.SilkS")
+    (uuid "9a70c57a-3cf6-493f-89cc-b989e86dc92b")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Value" "TermBlock_1x02_P5.08mm_SingleLayer"
+    (at 0 5.200 0)
+    (layer "F.Fab")
+    (uuid "7e0c72fa-2fee-4d14-868b-343c412cee38")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (attr through_hole)
+  (fp_rect (start -5.2 -4.2) (end 5.2 4.2) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (uuid "91586c5c-0bc2-4907-9f7e-bd6d683d5670"))
+  (fp_text user "1(+)" (at -2.54 -2.8 0) (layer "F.SilkS") (uuid "a160125f-b4ed-44ba-8da6-865611acfe71") (effects (font (size 1.0 1.0) (thickness 0.18))))
+  (fp_text user "2(-)" (at 2.54 -2.8 0) (layer "F.SilkS") (uuid "add17cad-201f-480b-b5bb-2606b41a42d5") (effects (font (size 1.0 1.0) (thickness 0.18))))
+  (fp_rect
+    (start -5.500 -4.500)
+    (end 5.500 4.500)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "916d57c8-6c09-4e18-9fa7-0f81d3a08384")
+  )
+  (pad "1" thru_hole rect
+    (at -2.540 0.000)
+    (size 3.000 3.000)
+    (drill 1.300)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "cd421b7c-2fa2-4dff-b52f-ac7b10894d3f")
+  )
+  (pad "2" thru_hole oval
+    (at 2.540 0.000)
+    (size 3.000 3.000)
+    (drill 1.300)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "380e9731-42b6-4e1d-8733-46adbc4f116a")
+  )
+)

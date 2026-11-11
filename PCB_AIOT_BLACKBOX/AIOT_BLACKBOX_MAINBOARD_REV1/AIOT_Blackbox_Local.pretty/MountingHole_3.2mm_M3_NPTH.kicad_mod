@@ -1,0 +1,50 @@
+(footprint "MountingHole_3.2mm_M3_NPTH"
+  (version 20240108)
+  (generator "pcbnew")
+  (generator_version "8.0")
+  (layer "F.Cu")
+  (descr "Verified M3 Corner Mounting Hole 3.2mm NPTH")
+  (tags "mounting hole M3")
+  (property "Reference" "REF**"
+    (at 0 -3.800 0)
+    (layer "F.SilkS")
+    (uuid "2ee8ec23-6c99-4011-8df8-85a54fcb8634")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Value" "MountingHole_3.2mm_M3_NPTH"
+    (at 0 3.800 0)
+    (layer "F.Fab")
+    (uuid "af0883a2-b38d-46d1-a232-1aff0f095919")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (attr through_hole)
+  (fp_circle (center 0 0) (end 3.0 0) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (uuid "cc27704a-7082-4069-b41d-d8d8057a98c4"))
+  (fp_rect
+    (start -3.200 -3.200)
+    (end 3.200 3.200)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "f73fb7c1-273d-4de4-bc2e-53b9c9ef1250")
+  )
+  (pad "" np_thru_hole circle
+    (at 0.000 0.000)
+    (size 3.200 3.200)
+    (drill 3.200)
+    (layers "*.Cu" "*.Mask")
+    (uuid "77fd9dda-a929-4227-800d-4718bdbe638b")
+  )
+)

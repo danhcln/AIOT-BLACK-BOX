@@ -1,0 +1,337 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-18T22:28:42",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f08cc598-a063-4249-9c88-7c1a781a821c",
+            "violations": [
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'ADC_VBAT_SENSE'",
+                            "pos": {
+                                "x": 1.2446,
+                                "y": 0.5715
+                            },
+                            "uuid": "b801e772-911e-4ba8-bc58-0f246025b87a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'ADC_VBAT_SENSE' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'ADC_VBAT_SENSE'",
+                            "pos": {
+                                "x": 1.2446,
+                                "y": 0.5715
+                            },
+                            "uuid": "b801e772-911e-4ba8-bc58-0f246025b87a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.762
+                            },
+                            "uuid": "db044000-6448-4588-94f0-a02b65a2143f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'VBUS_MUX' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.762
+                            },
+                            "uuid": "db044000-6448-4588-94f0-a02b65a2143f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.9144
+                            },
+                            "uuid": "f6c9c4dd-9038-4c40-ad51-fe4c3050253e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 1 [VBUS, Power input, Line]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": 0.7874
+                            },
+                            "uuid": "622fa83b-dcf9-48eb-892e-21f6a4dc4427"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'CHG_STAT'",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": 1.0668
+                            },
+                            "uuid": "cb99d5f2-c844-43b5-bdd1-f257ea08cd4e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'CHG_STAT' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'CHG_STAT'",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": 1.0668
+                            },
+                            "uuid": "cb99d5f2-c844-43b5-bdd1-f257ea08cd4e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'CHG_INT'",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": 1.1176
+                            },
+                            "uuid": "8cefdf53-8d07-44b3-b508-3c0a36670b3d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'CHG_INT' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'CHG_INT'",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": 1.1176
+                            },
+                            "uuid": "8cefdf53-8d07-44b3-b508-3c0a36670b3d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'SYS'",
+                            "pos": {
+                                "x": 2.6924,
+                                "y": 0.9271
+                            },
+                            "uuid": "596759f6-b7f4-49ac-bb17-0231fdb0d3a0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'SYS' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'SYS'",
+                            "pos": {
+                                "x": 2.6924,
+                                "y": 0.9271
+                            },
+                            "uuid": "596759f6-b7f4-49ac-bb17-0231fdb0d3a0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBAT'",
+                            "pos": {
+                                "x": 2.8702,
+                                "y": 1.016
+                            },
+                            "uuid": "5a83e17f-838f-4c58-8dff-22e48a371397"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'VBAT' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBAT'",
+                            "pos": {
+                                "x": 2.8702,
+                                "y": 1.016
+                            },
+                            "uuid": "5a83e17f-838f-4c58-8dff-22e48a371397"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Symbol 'DW01A' doesn't match copy in library 'Battery_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [DW01A]",
+                            "pos": {
+                                "x": 0.6604,
+                                "y": 0.8636
+                            },
+                            "uuid": "3e148986-cf63-47df-9914-4c6f07a13953"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'FS8205A' not found in symbol library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [FS8205A]",
+                            "pos": {
+                                "x": 1.016,
+                                "y": 0.8636
+                            },
+                            "uuid": "16a8fa3a-ef06-49a4-b26d-85fc43968a4d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'FS8205A' not found in symbol library 'Transistor_FET'",
+                    "items": [
+                        {
+                            "description": "Symbol Q2 [FS8205A]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 0.8636
+                            },
+                            "uuid": "84ed31b4-d7d5-4f07-aee3-8ba4f29e6317"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'Texas_RTW0024A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [BQ25895RTWR]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 0.9652
+                            },
+                            "uuid": "bd3beb16-9c28-4302-ad9d-58067c0f5e1c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'BQ25895RTWR' not found in symbol library 'Battery_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [BQ25895RTWR]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 0.9652
+                            },
+                            "uuid": "bd3beb16-9c28-4302-ad9d-58067c0f5e1c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'L_Bourns_SRP6540' not found in library 'Inductor_SMD'",
+                    "items": [
+                        {
+                            "description": "Symbol L1 [L]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 0.7874
+                            },
+                            "uuid": "0a1d40b2-07c2-450a-ae86-dafe796c7c1f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        }
+    ],
+    "source": "02_CHARGER_BATTERY.kicad_sch"
+}

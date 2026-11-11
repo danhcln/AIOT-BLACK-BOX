@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C / C++ Build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+build/
+bin/
+out/
+
+# KiCad Project User & Local Settings
+*.kicad_prl
+*.lck
+*-bak
+*.bak
+*-backups/
+_autosave-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+
+# Temporary / Office lock files
+~$*
+.~lock.*
+*.tmp
+
+# Secrets and environment files
+.env
+*.pem
+*.key
+*.token
+
+# IDE & Editor files
+.vscode/
+.vs/
+.idea/
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary scratch and experiment files
+scratch/
+scratch_*.py
+*_test-drc.rpt
+*_test.kicad_pcb
+*_test.kicad_prl
+*_test.kicad_pro
+_temp_*
+
+.history/

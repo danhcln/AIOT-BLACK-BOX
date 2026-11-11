@@ -1,0 +1,13 @@
+Ref,Pitch_mm,Pitch_mil,Net,From_Pad,To_Pad,Wire_Gauge,Wire_Length_mm,Wire_Color,Function_Purpose,Assembly_Notes
+JMP1,12.70,500,Net-(J1-MOSI),J1.3 (136.73; 104.00),U1.17 (157.30; 98.97),24 AWG,15.0,Blue,Nhảy tín hiệu MOSI qua SCK và MISO,Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP2,7.62,300,3V3_SYS,TP2.1 (78.00; 70.00),R3.1 (110.92; 53.50),22 AWG,10.0,Red,Nhảy nguồn logic 3V3_SYS qua đường SIM_PWR (2.5mm),Dây đồng 22 AWG bọc Teflon chịu nhiệt; hàn THT xuyên lỗ mặt Top
+JMP3,7.62,300,Net-(U1-GPIO6),SW1.1 (114.73; 47.00),U1.7 (157.30; 71.03),24 AWG,10.0,Yellow,Nhảy tín hiệu nút nhấn CANCEL qua cực Base Q1 còi,Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP4,10.16,400,/I2C_SDA_GPIO8,U1.15 (157.30; 86.27),U7.4 / U2.4 / U3.4,24 AWG,13.0,Green,Nhảy bus dữ liệu I2C_SDA qua bus I2C_SCL,Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP5,7.62,300,Net-(U1-GPIO6),R3.2 / C2.1 (121.08; 49.81),U1.7 (157.30; 71.03),24 AWG,10.0,Yellow,Nhảy tín hiệu nút nhấn CANCEL qua sống nguồn 5V_SYS,Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP6,10.16,400,Net-(J1-MISO),J1.4 (139.27; 104.00),U1.19 (157.30; 104.05),24 AWG,13.0,White,Nhảy tín hiệu SPI MISO qua chân 5V và GND của header MicroSD J1,Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP7,10.16,400,3V3_SYS,Rail 3V3_SYS (80.00; 84.50),U3.5 (71.81; 100.00) & U2.1 (87.11; 96.00),22 AWG,13.0,Red,Nhảy nguồn logic 3V3_SYS qua bus SCL cấp cho RTC DS3231 và IMU MPU6050,Dây đồng 22 AWG bọc Teflon chịu nhiệt; hàn THT xuyên lỗ mặt Top
+JMP8,12.70,500,3V3_SYS,Rail 3V3_SYS (102.35; 84.50),U2.7 AD0 (102.35; 96.00),24 AWG,15.0,Red,Nhảy 3V3_SYS qua SDA/SCL cấp chân AD0 MPU6050 để khóa cứng địa chỉ I2C 0x69 (tránh xung đột với DS3231 0x68),Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP9,7.62,300,3V3_SYS,Rail 3V3_SYS (134.92; 86.50),R_PU2.1 (134.92; 93.50),24 AWG,10.0,Red,Nhảy nguồn 3V3_SYS qua SDA/SCL cấp cực 1 điện trở kéo lên R_PU2 (4.7k) cho bus SCL,Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP10,7.62,300,/I2C_SCL_GPIO9,Bus I2C_SCL (103.27; 100.00),U7.3 OLED SCL (103.27; 116.50),24 AWG,10.0,Orange,Nhảy xung nhịp I2C_SCL qua sống ngang SDA (Y=104.00) cấp thẳng chân 3 màn hình OLED,Dây đồng mạ thiếc bọc cách điện Teflon/PVC; hàn THT xuyên lỗ mặt Top
+JMP11,12.70,500,GND,J1.6 MicroSD GND (144.35; 104.00),Mặt phẳng mass GND (144.35; 120.00),22 AWG,15.0,Black,Nhảy mass GND của module MicroSD qua sống nguồn 5V_SYS vào mặt phẳng đồng GND nguyên khối,Dây đồng 22 AWG bọc Teflon/PVC; hàn THT xuyên lỗ mặt Top
+

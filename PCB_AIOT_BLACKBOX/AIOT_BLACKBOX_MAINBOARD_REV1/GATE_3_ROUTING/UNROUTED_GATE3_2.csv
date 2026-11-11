@@ -1,0 +1,17 @@
+Item_Type,RefDes,Net_Name,Pad_1,Pad_2,Status,Physical_Resolution
+Airwire,JMP1,Net-(J1-MOSI),JMP1.1 (151.00; 111.67),JMP1.2 (151.00; 98.97),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 15mm mặt trên Top
+Airwire,JMP2,3V3_SYS,JMP2.1 (81.00; 61.81),JMP2.2 (81.00; 54.19),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 22 AWG dài 10mm mặt trên Top
+Airwire,JMP3,Net-(U1-GPIO6),JMP3.1 (145.00; 61.73),JMP3.2 (145.00; 54.11),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 10mm mặt trên Top
+Airwire,JMP4,/I2C_SDA_GPIO8,JMP4.1 (112.00; 98.58),JMP4.2 (112.00; 88.42),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 13mm mặt trên Top
+Airwire,JMP5,Net-(U1-GPIO6),JMP5.1 (124.00; 49.81),JMP5.2 (124.00; 42.19),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 10mm mặt trên Top
+Airwire,JMP6,Net-(J1-MISO),JMP6.1 (139.27; 106.30),JMP6.2 (149.43; 106.30),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 13mm mặt trên Top
+Airwire,JMP7,3V3_SYS,JMP7.1 (80.00; 96.00),JMP7.2 (80.00; 85.84),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 22 AWG dài 13mm mặt trên Top
+Airwire,JMP8,3V3_SYS,JMP8.1 (102.35; 93.35),JMP8.2 (102.35; 80.65),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 15mm mặt trên Top (Khóa AD0 = 0x69)
+Airwire,JMP9,3V3_SYS,JMP9.1 (130.00; 93.81),JMP9.2 (130.00; 86.19),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 10mm mặt trên Top (Kéo R_PU2.1)
+Airwire,JMP10,/I2C_SCL_GPIO9,JMP10.1 (103.27; 109.81),JMP10.2 (103.27; 102.19),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 24 AWG dài 10mm mặt trên Top (Cấp OLED U7.3)
+Airwire,JMP11,GND,JMP11.1 (144.35; 118.85),JMP11.2 (144.35; 106.15),COMPLETED_BY_JUMPER,Hàn dây đồng cách điện 22 AWG dài 15mm mặt trên Top (Mass MicroSD J1.6)
+Zone_Island,ZONE1,GND,(50.00; 40.00),N/A,ISOLATED_GND_ISLAND,Đảo đồng mass cô lập ở góc bo; không ảnh hưởng mạch tín hiệu
+Zone_Island,ZONE2,GND,(50.00; 40.00),N/A,ISOLATED_GND_ISLAND,Đảo đồng mass cô lập ở góc bo; không ảnh hưởng mạch tín hiệu
+Zone_Island,ZONE3,GND,(50.00; 40.00),N/A,ISOLATED_GND_ISLAND,Đảo đồng mass cô lập ở góc bo; không ảnh hưởng mạch tín hiệu
+Zone_Island,ZONE4,GND,(50.00; 40.00),N/A,ISOLATED_GND_ISLAND,Đảo đồng mass cô lập ở góc bo; không ảnh hưởng mạch tín hiệu
+

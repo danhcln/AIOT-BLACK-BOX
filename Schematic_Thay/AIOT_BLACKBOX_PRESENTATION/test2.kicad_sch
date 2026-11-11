@@ -1,0 +1,8 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "test-uuid")
+	(paper "A4")
+	(text "HELLO" (at 100 100 0) (effects (font (size 1.8 1.8) (bold yes))) (uuid "1111"))
+)

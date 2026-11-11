@@ -1,0 +1,225 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-18T21:52:24",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/153e953a-b519-457d-bbea-fa68b508ee97",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol F2 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 0.5207,
+                                "y": 1.0922
+                            },
+                            "uuid": "b2726bc1-d6ae-4823-9a2e-bfe76329ee4d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.6096,
+                                "y": 1.3462
+                            },
+                            "uuid": "a0071761-3a28-4e0b-9724-ab28eb799faf"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol D3 Pin 2 [A, Passive, Line]",
+                            "pos": {
+                                "x": 0.762,
+                                "y": 0.5461
+                            },
+                            "uuid": "e86d8dcb-3c1e-437b-9597-866ae4703537"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 7 [IN1, Power input, Line]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.7874
+                            },
+                            "uuid": "7fde8a8f-b017-462b-9708-21e7157919d8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 0.7366
+                            },
+                            "uuid": "9ea23e7c-73dc-42d4-a0f5-311b03e22fd3"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 1 [OUT, Power output, Line]",
+                            "pos": {
+                                "x": 1.778,
+                                "y": 0.7874
+                            },
+                            "uuid": "39002f99-2f03-493a-b7c2-a24bacd4ca8b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 2.4892,
+                                "y": 0.8382
+                            },
+                            "uuid": "cd2d3237-a5d1-4e37-a68c-d312d8c7a8c5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Hierarchical label 'VBUS_MUX' in root sheet cannot be connected to non-existent parent sheet",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 2.4892,
+                                "y": 0.8382
+                            },
+                            "uuid": "cd2d3237-a5d1-4e37-a68c-d312d8c7a8c5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Symbol 'USB_C_16P' not found in symbol library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [USB_C_16P]",
+                            "pos": {
+                                "x": 0.3048,
+                                "y": 1.143
+                            },
+                            "uuid": "758c24d3-e4f0-4014-a8cd-542989a69ef2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.1270 mm",
+                            "pos": {
+                                "x": 0.635,
+                                "y": 0.508
+                            },
+                            "uuid": "4a46caac-aa64-4ee8-bd2e-835af5ae2547"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0762 mm",
+                            "pos": {
+                                "x": 1.27,
+                                "y": 0.508
+                            },
+                            "uuid": "8426c99b-837c-49f2-b2c7-1ec7f5c670fb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Footprint 'Texas_RUX0012A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "c721df2e-0192-4610-998f-ee39431a2e16"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS2121RUXR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "c721df2e-0192-4610-998f-ee39431a2e16"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "01_INPUT_SELECTION.kicad_sch"
+}

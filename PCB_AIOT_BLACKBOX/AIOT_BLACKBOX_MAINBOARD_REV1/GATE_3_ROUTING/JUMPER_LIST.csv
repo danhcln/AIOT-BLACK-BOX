@@ -1,0 +1,6 @@
+RefDes,Footprint,Value,Net,Pad1_Pos_mm,Pad2_Pos_mm,Pitch_mm,Wire_Type,Current_Rating_A,Signal_Class,Purpose
+JMP1,WireJumper_P12.70mm_SingleLayer,Wire_Jumper_12.70mm,Net-(J1-MOSI),"(151.00, 111.67)","(151.00, 98.97)",12.7,24 AWG Solid Insulated Wire / 0-Ohm Resistor,3.5A (Wire) / 1A (0-Ohm),SIGNAL,"Jumps Net-(J1-MOSI) over SPI bus lines (SCK, MISO) on B.Cu"
+JMP2,WireJumper_P7.62mm_SingleLayer,Wire_Jumper_7.62mm,3V3_SYS,"(81.00, 61.81)","(81.00, 54.19)",7.62,24 AWG Solid Insulated Wire / 0-Ohm Resistor,3.5A (Wire) / 1A (0-Ohm),POWER,Jumps 3V3_SYS over high-current SIM_PWR (2.5mm) trace
+JMP3,WireJumper_P7.62mm_SingleLayer,Wire_Jumper_7.62mm,Net-(U1-GPIO6),"(145.00, 61.73)","(145.00, 54.11)",7.62,24 AWG Solid Insulated Wire / 0-Ohm Resistor,3.5A (Wire) / 1A (0-Ohm),SIGNAL,Jumps Net-(U1-GPIO6) [CANCEL] over Buzzer Q1 base circuit
+JMP4,WireJumper_P10.16mm_SingleLayer,Wire_Jumper_10.16mm,/I2C_SDA_GPIO8,"(112.00, 98.58)","(112.00, 88.42)",10.16,24 AWG Solid Insulated Wire / 0-Ohm Resistor,3.5A (Wire) / 1A (0-Ohm),SIGNAL,Jumps /I2C_SDA_GPIO8 over /I2C_SCL_GPIO9 bus trace
+JMP5,WireJumper_P7.62mm_SingleLayer,Wire_Jumper_7.62mm,Net-(U1-GPIO6),"(124.00, 49.81)","(124.00, 42.19)",7.62,24 AWG Solid Insulated Wire / 0-Ohm Resistor,3.5A (Wire) / 1A (0-Ohm),SIGNAL,Jumps Net-(U1-GPIO6) [CANCEL] over 5V_SYS distribution spine

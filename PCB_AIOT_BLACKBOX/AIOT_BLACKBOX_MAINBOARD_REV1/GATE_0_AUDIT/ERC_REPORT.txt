@@ -1,0 +1,20 @@
+======================================================================
+BÁO CÁO KIỂM TRA ERC CHÍNH THỨC (SAU KHI CHỐT TOÀN BỘ PHẦN CỨNG)
+======================================================================
+Lệnh thực thi: D:\KiCad\bin\kicad-cli.exe sch erc --severity-all AIOT_BLACKBOX_MAINBOARD_REV1.kicad_sch
+Kết quả: 0 Errors, 0 Warnings (PASS TUYỆT ĐỐI - Không dùng PWR_FLAG giả)
+
+--- NỘI DUNG BÁO CÁO KICAD-CLI ---
+ERC report (2026-11-09T15:33:04, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+
+ ** ERC messages: 0  Errors 0  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
+

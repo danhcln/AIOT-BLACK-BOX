@@ -1,0 +1,117 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-18T22:44:43",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/30da92b0-4ae3-4924-a29e-c249db57ab8b",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Sheet Pin 'VBUS_MUX'",
+                            "pos": {
+                                "x": 1.016,
+                                "y": 0.635
+                            },
+                            "uuid": "049cfe46-789c-4d94-b317-a70ee68d594a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Label 'VBUS_MUX'",
+                            "pos": {
+                                "x": 2.4892,
+                                "y": 0.8382
+                            },
+                            "uuid": "6f79e566-7c33-418e-86b3-a6a9167e2ec6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Symbol 'USB_C_16P' not found in symbol library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [USB_C_16P]",
+                            "pos": {
+                                "x": 0.3048,
+                                "y": 1.143
+                            },
+                            "uuid": "8269d3cb-92d5-444c-8713-fdb2a9867b7e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Footprint 'Texas_RUX0012A' not found in library 'Package_DFN_QFN'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "18eca5ae-50a7-476c-9ca6-c0737bbf3483"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'TPS2121RUXR' not found in symbol library 'Power_Management'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TPS2121RUXR]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.889
+                            },
+                            "uuid": "18eca5ae-50a7-476c-9ca6-c0737bbf3483"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        },
+        {
+            "path": "/INPUT_SELECTION/",
+            "uuid_path": "/30da92b0-4ae3-4924-a29e-c249db57ab8b/4e3fb9c8-05ef-438a-880c-7f5f471e1395",
+            "violations": []
+        }
+    ],
+    "source": "test_root.kicad_sch"
+}

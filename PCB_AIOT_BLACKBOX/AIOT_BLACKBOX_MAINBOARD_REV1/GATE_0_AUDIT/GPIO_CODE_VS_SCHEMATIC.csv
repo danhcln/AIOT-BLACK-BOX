@@ -1,0 +1,46 @@
+Header_Pin,ESP32_Pin_Name,Hardware_Capability_N16R8,Firmware_filecodemain_cpp,Old_Schematic_Presentation_REV8,Conflict_Status,New_Schematic_Mainboard_REV1,Gate0_Action_Taken
+J1-1,3V3,3.3V LDO Output from DevKit,UNUSED (Internal MCU rail only),Connected to 3V3_SYS (supplied all peripherals),POWER_CONFLICT_RESOLVED,NC (No Connect),Disconnected from 3V3_SYS per RULE 07; external 3.3V regulator U6 drives 3V3_SYS
+J1-2,3V3,3.3V LDO Output from DevKit,UNUSED (Internal MCU rail only),NC (No Connect),MATCH,NC (No Connect),Preserved NC; do not use DevKit 3V3 as peripheral power source
+J1-3,RST,Chip Enable / Reset (Active Low),UNUSED (Internal pull-up + RC on DevKit),NC (No Connect),MATCH,NC (No Connect),Preserved NC
+J1-4,GPIO4,General GPIO / ADC1_CH3,UNUSED (Not in firmware),4G_PWRKEY (Connected to U5 pin 4),UNPROGRAMMED_REMOVED,NC (No Connect),Disconnected from SIM PWRKEY; marked 4G_PWRKEY as UNASSIGNED
+J1-5,GPIO5,General GPIO / ADC1_CH4,UNUSED (Not in firmware),4G_STATUS (Connected to U5 pin 5),UNPROGRAMMED_REMOVED,NC (No Connect),Disconnected from SIM STATUS; marked 4G_STATUS as UNASSIGNED
+J1-6,GPIO6,General GPIO / ADC1_CH5,UNUSED (Not in firmware),CANCEL (Connected to SW1 button),UNPROGRAMMED_REMOVED,NC (No Connect),Disconnected from SW1; CANCEL circuit isolated as UNASSIGNED_CANCEL
+J1-7,GPIO7,General GPIO / ADC1_CH6,UNUSED (Not in firmware),LED_STATUS (Connected to R4/D1 LED),UNPROGRAMMED_REMOVED,NC (No Connect),Disconnected from R4/D1; LED circuit isolated as UNASSIGNED_LED
+J1-8,GPIO15,General GPIO / U0RTS / ADC2_CH4,SIM_RX_PIN (UART2 RX <- SIM A7682S TXD @ 115200),BUZZER_CTRL (Connected to R5/Q1 Buzzer),CRITICAL_CONFLICT_RESOLVED,SIM_RX_GPIO15 (Connected to U5 SIM TXD),Removed Buzzer from GPIO15; routed GPIO15 to SIM A7682S TXD per firmware; Buzzer isolated as UNASSIGNED_BUZZER
+J1-9,GPIO16,General GPIO / U0CTS / ADC2_CH5,SIM_TX_PIN (UART2 TX -> SIM A7682S RXD @ 115200),NC (Unused in old schematic),CRITICAL_CONFLICT_RESOLVED,SIM_TX_GPIO16 (Connected to U5 SIM RXD),Removed NC; routed GPIO16 to SIM A7682S RXD per firmware
+J1-10,GPIO17,General GPIO / U1TXD / ADC2_CH6,GPS_TX_PIN (UART1 TX -> GPS NEO-M8N RXD @ 9600),GNSS_TXD (Connected to U4 GPS RX),MATCH,GPS_TX_GPIO17 (Connected to U4 GPS RX),Verified crossover ESP TX (GPIO17) -> GPS RXD
+J1-11,GPIO18,General GPIO / U1RXD / ADC2_CH7,GPS_RX_PIN (UART1 RX <- GPS NEO-M8N TXD @ 9600),GNSS_RXD (Connected to U4 GPS TX),MATCH,GPS_RX_GPIO18 (Connected to U4 GPS TX),Verified crossover ESP RX (GPIO18) <- GPS TXD
+J1-12,GPIO8,General GPIO / ADC1_CH7,I2C_SDA_PIN (I2C SDA: OLED 0x3C + DS3231 0x68 + MPU6050 0x69),I2C0_SDA (Connected to U2/U3/U7 SDA + R_PU1),MATCH,I2C_SDA_GPIO8 (Connected to U2/U3/U7 SDA + R_PU1),Preserved I2C SDA bus on GPIO8
+J1-13,GPIO3,Strapping Pin (JTAG Signal Source),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Avoid strapping pin)
+J1-14,GPIO46,Strapping Pin (Boot Mode / ROM Log),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Avoid strapping pin)
+J1-15,GPIO9,General GPIO / ADC1_CH8,I2C_SCL_PIN (I2C SCL: OLED 0x3C + DS3231 0x68 + MPU6050 0x69),I2C0_SCL (Connected to U2/U3/U7 SCL + R_PU2),MATCH,I2C_SCL_GPIO9 (Connected to U2/U3/U7 SCL + R_PU2),Preserved I2C SCL bus on GPIO9
+J1-16,GPIO10,General GPIO / FSPICS0 / ADC1_CH9,SD_CS_PIN (MicroSD SPI Chip Select @ 16MHz),IMU_INT (Connected to U2 MPU6050 INT),CRITICAL_CONFLICT_RESOLVED,SD_CS_GPIO10 (Connected to J1 MicroSD CS),Disconnected MPU6050 INT (marked UNASSIGNED); routed GPIO10 to MicroSD CS per firmware
+J1-17,GPIO11,General GPIO / FSPID / ADC2_CH0,SPI_MOSI_PIN (MicroSD SPI MOSI),SPI_MOSI (Connected to J1 MicroSD MOSI),MATCH,SPI_MOSI_GPIO11 (Connected to J1 MicroSD MOSI),Preserved SPI MOSI on GPIO11
+J1-18,GPIO12,General GPIO / FSPICLK / ADC2_CH1,SPI_SCK_PIN (MicroSD SPI SCK @ 16MHz),SPI_SCK (Connected to J1 MicroSD SCK),MATCH,SPI_SCK_GPIO12 (Connected to J1 MicroSD SCK),Preserved SPI SCK on GPIO12
+J1-19,GPIO13,General GPIO / FSPIQ / ADC2_CH2,SPI_MISO_PIN (MicroSD SPI MISO),SPI_MISO (Connected to J1 MicroSD MISO),MATCH,SPI_MISO_GPIO13 (Connected to J1 MicroSD MISO),Preserved SPI MISO on GPIO13
+J1-20,GPIO14,General GPIO / FSPIWP / ADC2_CH3,UNUSED (Not in firmware),SD_CS (Connected to J1 MicroSD CS),CRITICAL_CONFLICT_RESOLVED,NC (No Connect),Moved SD_CS to GPIO10 per firmware; placed NC on GPIO14 (safe free GPIO candidate)
+J1-21,5V,5V System Power Input to DevKit,5V Power Supply Input,Connected to 5V_SYS,MATCH,5V_SYS (From LX-2BUPS 5V/3A UPS+),Preserved 5V_SYS supply to DevKit 5V pin
+J1-22,GND,Common Ground,Common Ground,Connected to GND,MATCH,GND,Preserved common GND connection
+J3-1,GND,Common Ground,Common Ground,Connected to GND,MATCH,GND,Preserved common GND connection
+J3-2,GPIO43,U0TXD (Default USB-UART0 TX),Serial (USB Debug Terminal @ 115200),4G_TXD (Connected to U5 SIM RX),CRITICAL_CONFLICT_RESOLVED,NC (No Connect - Reserved for UART0 Debug),Disconnected SIM from GPIO43; SIM moved to GPIO15/16 per firmware
+J3-3,GPIO44,U0RXD (Default USB-UART0 RX),Serial (USB Debug Terminal @ 115200),4G_RXD (Connected to U5 SIM TX),CRITICAL_CONFLICT_RESOLVED,NC (No Connect - Reserved for UART0 Debug),Disconnected SIM from GPIO44; SIM moved to GPIO15/16 per firmware
+J3-4,GPIO1,General GPIO / ADC1_CH0,UNUSED (Not in firmware),ADC_VBAT_SENSE (Connected to R1/R2 divider),UNPROGRAMMED_REMOVED,NC (No Connect),Disconnected unverified VBAT divider; marked ADC_VBAT_SENSE as UNASSIGNED
+J3-5,GPIO2,General GPIO / ADC1_CH1,UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Safe free GPIO/ADC1 candidate)
+J3-6,GPIO42,General GPIO / MTMS (JTAG),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Safe free GPIO candidate)
+J3-7,GPIO41,General GPIO / MTDI (JTAG),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Safe free GPIO candidate)
+J3-8,GPIO40,General GPIO / MTDO (JTAG),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Safe free GPIO candidate)
+J3-9,GPIO39,General GPIO / MTCK (JTAG),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Safe free GPIO candidate)
+J3-10,GPIO38,On-board RGB LED (WS2812 on DevKit),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Connected to onboard WS2812 RGB LED on DevKit)
+J3-11,GPIO37,RESERVED Octal SPI PSRAM/Flash (N16R8),RESERVED_DO_NOT_USE,NC (No Connect),MATCH,NC (No Connect - DO NOT USE),Strictly forbidden on N16R8 (Octal PSRAM bus)
+J3-12,GPIO36,RESERVED Octal SPI PSRAM/Flash (N16R8),RESERVED_DO_NOT_USE,NC (No Connect),MATCH,NC (No Connect - DO NOT USE),Strictly forbidden on N16R8 (Octal PSRAM bus)
+J3-13,GPIO35,RESERVED Octal SPI PSRAM/Flash (N16R8),RESERVED_DO_NOT_USE,NC (No Connect),MATCH,NC (No Connect - DO NOT USE),Strictly forbidden on N16R8 (Octal PSRAM bus)
+J3-14,GPIO0,Strapping Pin (Boot Mode Button on DevKit),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Avoid strapping pin)
+J3-15,GPIO45,Strapping Pin (VDD_SPI Voltage),UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Avoid strapping pin)
+J3-16,GPIO48,General GPIO / Onboard RGB on v1.0,UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC
+J3-17,GPIO47,General GPIO / SPICLK_P,UNUSED,NC (No Connect),MATCH,NC (No Connect),Preserved NC (Safe free GPIO candidate)
+J3-18,GPIO21,General GPIO,UNUSED (Not in firmware),GNSS_PPS (Connected to U4 GPS PPS),UNPROGRAMMED_REMOVED,NC (No Connect),Disconnected from GPS PPS; marked GNSS_PPS as UNASSIGNED
+J3-19,GPIO20,USB_D+ (Native USB OTG/Serial-JTAG),UNUSED (Reserved USB D+),NC (No Connect),MATCH,NC (No Connect),Preserved NC (Reserved for Native USB)
+J3-20,GPIO19,USB_D- (Native USB OTG/Serial-JTAG),UNUSED (Reserved USB D-),NC (No Connect),MATCH,NC (No Connect),Preserved NC (Reserved for Native USB)
+J3-21,GND,Common Ground,Common Ground,NC (Unconnected extra GND pin),MATCH,NC (Connected internally on DevKit to GND),Preserved NC on schematic symbol (all 4 GND pins tied on PCB footprint)
+J3-22,GND,Common Ground,Common Ground,NC (Unconnected extra GND pin),MATCH,NC (Connected internally on DevKit to GND),Preserved NC on schematic symbol (all 4 GND pins tied on PCB footprint)
+

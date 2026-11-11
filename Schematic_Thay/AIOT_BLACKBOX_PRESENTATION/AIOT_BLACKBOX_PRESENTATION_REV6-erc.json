@@ -1,0 +1,323 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-27T20:50:34",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/3a9cf166-0ef2-41d5-8dfc-7af0e9b78630",
+            "violations": [
+                {
+                    "description": "Label not connected",
+                    "items": [
+                        {
+                            "description": "Label 'ADC_VBAT_SENSE'",
+                            "pos": {
+                                "x": 1.143,
+                                "y": 0.8382
+                            },
+                            "uuid": "abf58472-f8ea-4e8b-97ee-b50b4c630f2f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 26 [GPIO1, Input, Line]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 0.8382
+                            },
+                            "uuid": "5a78eb9d-709f-4717-bf58-449b61ca97a4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 26 [GPIO1, Input, Line]",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 0.8382
+                            },
+                            "uuid": "5a78eb9d-709f-4717-bf58-449b61ca97a4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol J2 [USB_C_Input]",
+                            "pos": {
+                                "x": 0.3302,
+                                "y": 0.4318
+                            },
+                            "uuid": "f54bea41-1b18-4722-be31-547501d18fa9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '5V_USB' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR? [5V_USB]",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 0.3429
+                            },
+                            "uuid": "2e43fde0-9f87-499e-a200-4e4ad8268386"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [MPU6050_Module]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.9398
+                            },
+                            "uuid": "02579be9-293f-4b44-96a1-ccad09e4cfa3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [DS3231_RTC_Module]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 1.3335
+                            },
+                            "uuid": "4c464e75-4c44-4317-abdc-e6f278bf6b40"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [MicroSD_SPI_Module]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 1.7272
+                            },
+                            "uuid": "bdd284ef-286c-43c5-ae8c-b89bdf6f6bc9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [Power_Management_18650]",
+                            "pos": {
+                                "x": 0.7366,
+                                "y": 0.4318
+                            },
+                            "uuid": "e6964129-ac3a-46e6-a0d6-816b2754cce2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '5V_SYS' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR? [5V_SYS]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.254
+                            },
+                            "uuid": "d4b65241-1f56-485d-a830-9491f07afa00"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0762 mm",
+                            "pos": {
+                                "x": 1.2954,
+                                "y": 0.8382
+                            },
+                            "uuid": "15f759da-56e7-4dcc-b55a-09f457c47970"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol 'VBAT' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR? [VBAT]",
+                            "pos": {
+                                "x": 1.27,
+                                "y": 0.3429
+                            },
+                            "uuid": "ef43d9c1-f3b3-4693-835b-8dccba764f28"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '5V_SYS' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR? [5V_SYS]",
+                            "pos": {
+                                "x": 1.27,
+                                "y": 0.7112
+                            },
+                            "uuid": "2ba4d813-7867-4fb4-98a5-c84ab2f570ee"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [ESP32-S3-DevKitC-1]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.9906
+                            },
+                            "uuid": "17eca076-86e9-4c59-b4d0-c013815c1877"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '5V_SYS' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR? [5V_SYS]",
+                            "pos": {
+                                "x": 2.159,
+                                "y": 0.254
+                            },
+                            "uuid": "399a11c1-c438-46a5-bf3b-9c564d7655dc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [MKE-M21_SIM7680C_Module]",
+                            "pos": {
+                                "x": 2.413,
+                                "y": 0.4318
+                            },
+                            "uuid": "b2fea493-a1bb-4cbb-b83b-f1adf4f130cb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [ATGM336H_GNSS_Module]",
+                            "pos": {
+                                "x": 2.413,
+                                "y": 1.0414
+                            },
+                            "uuid": "e0aa6b8e-1925-4483-8265-66022c60d505"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The current configuration does not include the symbol library 'Presentation'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [2SC1815]",
+                            "pos": {
+                                "x": 2.667,
+                                "y": 1.5494
+                            },
+                            "uuid": "4fba44af-760e-482d-bc56-21ceee138445"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '5V_SYS' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR? [5V_SYS]",
+                            "pos": {
+                                "x": 2.6924,
+                                "y": 1.397
+                            },
+                            "uuid": "54ffbfcc-7434-4d4d-83e6-a19a2dc806a3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "AIOT_BLACKBOX_PRESENTATION.kicad_sch"
+}

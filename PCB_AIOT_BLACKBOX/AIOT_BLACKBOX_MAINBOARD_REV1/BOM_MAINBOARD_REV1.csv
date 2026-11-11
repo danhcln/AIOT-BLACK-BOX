@@ -1,0 +1,40 @@
+Ref,Qty,Value,Component_Name,Supply_Rail,Assigned_Footprint,Mounting_Type,Status
+U1,1,ESP32-S3-DevKitC-1 N16R8,Bo vi điều khiển trung tâm ESP32-S3 N16R8 (44 chân - 2 hàng 1x22),5V_SYS (Pin 21),AIOT_Blackbox_Local:ESP32_S3_N16R8_Socket_2x22_P2.54mm_Row25.40mm_SingleLayer,2x Female Socket 1x22 (Row Pitch 25.40mm / 1000mil),LOCKED_VERIFIED
+U7,1,OLED_0.96_GM009605v4.3,Màn hình OLED 0.96 inch I2C SSD1306 (4 chân: GND-VDD-SCK-SDA),3V3_SYS (Pin 2),AIOT_Blackbox_Local:OLED_0.96_GM009605v4.3_1x04_P2.54mm_SingleLayer,Female Header 1x04 P2.54mm,LOCKED_VERIFIED
+U2,1,MPU6050_GY-521,Cảm biến gia tốc & góc nghiêng GY-521 MPU6050 (8 chân),3V3_SYS (Pin 1 & AD0 Pin 7),AIOT_Blackbox_Local:Module_GY-521_MPU6050_1x08_P2.54mm_SingleLayer,Female Header 1x08 P2.54mm,LOCKED_VERIFIED
+U3,1,DS3231_ZS-042,Module thời gian thực RTC DS3231 ZS-042 (6 chân - Đã gỡ R5 sạc),3V3_SYS (Pin 5),AIOT_Blackbox_Local:Module_DS3231_ZS042_1x06_P2.54mm_SingleLayer,Female Header 1x06 P2.54mm,LOCKED_VERIFIED
+J1,1,MicroSD_Adapter,Module đọc thẻ nhớ MicroSD SPI 6 chân (Có LDO 3.3V + Level Shifter),5V_SYS (Pin 5 VCC),AIOT_Blackbox_Local:Module_MicroSD_Adapter_1x06_P2.54mm_SingleLayer,Female Header 1x06 P2.54mm,LOCKED_VERIFIED
+U4,1,NEO-M8N_V2149,Đầu nối cáp 5 chân tới module định vị GPS NEO-M8N V2149,3V3_SYS (Pin 1 VCC),AIOT_Blackbox_Local:Conn_GPS_NEO-M8N_V2149_1x05_P2.54mm_SingleLayer,Header/Connector 1x05 P2.54mm (CONNECTOR_ONLY),LOCKED_VERIFIED
+U5,1,A7680C,Đầu nối J6 5 chân tới module 4G LTE A7680C Breakout,SIM_PWR (5V từ nhánh sao 5V_SYS - Pin 1 VCC),AIOT_Blackbox_Local:Conn_SIM_Breakout_J6_1x05_P2.54mm_SingleLayer,Header/Connector 1x05 P2.54mm (CONNECTOR_ONLY),LOCKED_VERIFIED
+U6,1,REG_3V3_MODULE,Đầu nối 4 chân tới module hạ áp 5V_SYS -> 3V3_SYS (>=1A),5V_SYS -> 3V3_SYS,AIOT_Blackbox_Local:Conn_Regulator_3V3_1x04_P2.54mm_SingleLayer,Header/Module 1x04 P2.54mm,LOCKED_VERIFIED
+J2,1,LX-2BUPS_5V_3A,Domino nguồn tổng từ mạch UPS 2 cell 18650 LX-2BUPS (5V/3A),5V_SYS & GND,AIOT_Blackbox_Local:TermBlock_1x02_P5.08mm_SingleLayer,Domino hàn 2P P5.08mm,LOCKED_VERIFIED
+NT1,1,STAR_5V_TO_SIM_PWR,Net-tie đồng B.Cu rộng 2.5mm nối hình sao 5V_SYS -> SIM_PWR (KHÔNG thay bằng jumper nhỏ),5V_SYS -> SIM_PWR,AIOT_Blackbox_Local:NetTie_2_StarPoint_BCu_Width2.5mm,Đồng B.Cu liền 2.5mm (2 lỗ THT 1.0mm để bồi thiếc/dây 22AWG nếu cần),LOCKED_VERIFIED
+R_PU1,1,4.7k,Điện trở kéo lên bus I2C_SDA (GPIO8) lên 3V3_SYS,3V3_SYS,AIOT_Blackbox_Local:R_Axial_DIN0207_P10.16mm_SingleLayer,THT Axial 1/4W P10.16mm,LOCKED_VERIFIED
+R_PU2,1,4.7k,Điện trở kéo lên bus I2C_SCL (GPIO9) lên 3V3_SYS,3V3_SYS,AIOT_Blackbox_Local:R_Axial_DIN0207_P10.16mm_SingleLayer,THT Axial 1/4W P10.16mm,LOCKED_VERIFIED
+R3,1,10k,Điện trở kéo lên nút nhấn CANCEL (GPIO6) lên 3V3_SYS,3V3_SYS,AIOT_Blackbox_Local:R_Axial_DIN0207_P10.16mm_SingleLayer,THT Axial 1/4W P10.16mm,LOCKED_VERIFIED
+R4,1,330R,Điện trở hạn dòng LED trạng thái D1 (GPIO7),GPIO7,AIOT_Blackbox_Local:R_Axial_DIN0207_P10.16mm_SingleLayer,THT Axial 1/4W P10.16mm,LOCKED_VERIFIED
+R5,1,1k,Điện trở hạn dòng cực Base transistor Q1 điều khiển còi (GPIO5),GPIO5,AIOT_Blackbox_Local:R_Axial_DIN0207_P10.16mm_SingleLayer,THT Axial 1/4W P10.16mm,LOCKED_VERIFIED
+R6,1,10k,Điện trở kéo xuống R_BE từ cực Base Q1 xuống GND (chống kêu sai khi boot),GND,AIOT_Blackbox_Local:R_Axial_DIN0207_P10.16mm_SingleLayer,THT Axial 1/4W P10.16mm,LOCKED_VERIFIED
+C1,1,100nF,Tụ gốm lọc nhiễu đường nguồn 3V3_SYS,3V3_SYS,AIOT_Blackbox_Local:C_Disc_D5.0mm_P5.08mm_SingleLayer,THT Disc P5.08mm,LOCKED_VERIFIED
+C2,1,100nF,Tụ gốm lọc nhiễu chống dội nút nhấn CANCEL (GPIO6),3V3_SYS / GPIO6,AIOT_Blackbox_Local:C_Disc_D5.0mm_P5.08mm_SingleLayer,THT Disc P5.08mm,LOCKED_VERIFIED
+C3,1,470uF/16V Low-ESR,Tụ hóa bù dòng đỉnh phát sóng cho nhánh nguồn SIM_PWR (A7680C),SIM_PWR (5V),AIOT_Blackbox_Local:CP_Radial_D8.0mm_P5.08mm_SingleLayer,THT Radial D8.0mm P5.08mm,LOCKED_VERIFIED
+C4,1,100nF,Tụ gốm lọc nhiễu cao tần cho nhánh nguồn SIM_PWR (A7680C),SIM_PWR (5V),AIOT_Blackbox_Local:C_Disc_D5.0mm_P5.08mm_SingleLayer,THT Disc P5.08mm,LOCKED_VERIFIED
+Q1,1,2SC1815,Transistor NPN điều khiển còi báo động BZ1 (1=E, 2=C, 3=B),GND / Collector,AIOT_Blackbox_Local:TO-92_2SC1815_ECB_Staggered_SingleLayer,THT TO-92 Staggered,LOCKED_VERIFIED
+BZ1,1,5V_ACTIVE_BUZZER,Còi báo động chủ động 5V đường kính 12mm (Pad 1=+, Pad 2=-),5V_SYS (Pin 1),AIOT_Blackbox_Local:Buzzer_D12.0mm_P7.62mm_SingleLayer,THT D12.0mm P7.62mm,LOCKED_VERIFIED
+D1,1,LED_5MM,LED báo trạng thái 5mm THT (Pad 1=K, Pad 2=A),GPIO7 / GND,AIOT_Blackbox_Local:LED_D5.0mm_P2.54mm_SingleLayer,THT LED 5mm P2.54mm,LOCKED_VERIFIED
+SW1,1,CANCEL_BTN,Đầu nối 2 chân tới nút nhấn hủy cảnh báo CANCEL (GPIO6 - GND),GPIO6 / GND,AIOT_Blackbox_Local:PinHeader_1x02_P2.54mm_SingleLayer,Header 1x02 P2.54mm,LOCKED_VERIFIED
+TP1,1,TP_5V,Điểm đo kiểm tra đường nguồn tổng 5V_SYS,5V_SYS,AIOT_Blackbox_Local:TestPoint_THTPad_D2.2mm_Drill1.0mm_SingleLayer,THT Test Pad D2.2mm,LOCKED_VERIFIED
+TP2,1,TP_3V3,Điểm đo kiểm tra đường nguồn logic 3V3_SYS,3V3_SYS,AIOT_Blackbox_Local:TestPoint_THTPad_D2.2mm_Drill1.0mm_SingleLayer,THT Test Pad D2.2mm,LOCKED_VERIFIED
+TP3,1,TP_SIM_PWR,Điểm đo kiểm tra nhánh nguồn 5V cấp cho SIM A7680C,SIM_PWR,AIOT_Blackbox_Local:TestPoint_THTPad_D2.2mm_Drill1.0mm_SingleLayer,THT Test Pad D2.2mm,LOCKED_VERIFIED
+TP4,1,TP_GND,Điểm đo mass chung hệ thống GND,GND,AIOT_Blackbox_Local:TestPoint_THTPad_D2.2mm_Drill1.0mm_SingleLayer,THT Test Pad D2.2mm,LOCKED_VERIFIED
+JMP1,1,Wire_Jumper_12.70mm,Cầu nhảy dây đồng cách điện (MOSI qua SCK/MISO),Net-(J1-MOSI),AIOT_Blackbox_Local:WireJumper_P12.70mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 12.70mm),LOCKED_VERIFIED
+JMP2,1,Wire_Jumper_7.62mm,Cầu nhảy dây đồng cách điện (3V3_SYS qua SIM_PWR),3V3_SYS,AIOT_Blackbox_Local:WireJumper_P7.62mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 7.62mm),LOCKED_VERIFIED
+JMP3,1,Wire_Jumper_7.62mm,Cầu nhảy dây đồng cách điện (CANCEL qua Buzzer base),Net-(U1-GPIO6),AIOT_Blackbox_Local:WireJumper_P7.62mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 7.62mm),LOCKED_VERIFIED
+JMP4,1,Wire_Jumper_10.16mm,Cầu nhảy dây đồng cách điện (SDA qua SCL),/I2C_SDA_GPIO8,AIOT_Blackbox_Local:WireJumper_P10.16mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 10.16mm),LOCKED_VERIFIED
+JMP5,1,Wire_Jumper_7.62mm,Cầu nhảy dây đồng cách điện (CANCEL qua 5V_SYS spine),Net-(U1-GPIO6),AIOT_Blackbox_Local:WireJumper_P7.62mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 7.62mm),LOCKED_VERIFIED
+JMP6,1,Wire_Jumper_10.16mm,Cầu nhảy dây đồng cách điện (MISO qua 5V/GND J1),Net-(J1-MISO),AIOT_Blackbox_Local:WireJumper_P10.16mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 10.16mm),LOCKED_VERIFIED
+JMP7,1,Wire_Jumper_10.16mm,Cầu nhảy dây đồng cách điện (3V3_SYS qua SCL vào U3/U2),3V3_SYS,AIOT_Blackbox_Local:WireJumper_P10.16mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 10.16mm),LOCKED_VERIFIED
+JMP8,1,Wire_Jumper_12.70mm,Cầu nhảy dây đồng cách điện (3V3_SYS cấp AD0 MPU6050 khóa địa chỉ 0x69),3V3_SYS,AIOT_Blackbox_Local:WireJumper_P12.70mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 12.70mm),LOCKED_VERIFIED
+JMP9,1,Wire_Jumper_7.62mm,Cầu nhảy dây đồng cách điện (3V3_SYS cấp trở kéo lên R_PU2 cho bus I2C_SCL),3V3_SYS,AIOT_Blackbox_Local:WireJumper_P7.62mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 7.62mm),LOCKED_VERIFIED
+JMP10,1,Wire_Jumper_7.62mm,Cầu nhảy dây đồng cách điện (I2C_SCL nhảy qua spine SDA cấp OLED U7.3),/I2C_SCL_GPIO9,AIOT_Blackbox_Local:WireJumper_P7.62mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 7.62mm),LOCKED_VERIFIED
+JMP11,1,Wire_Jumper_12.70mm,Cầu nhảy dây đồng cách điện (GND MicroSD J1.6 nhảy qua spine 5V_SYS vào mặt phẳng mass GND),GND,AIOT_Blackbox_Local:WireJumper_P12.70mm_SingleLayer,Dây đồng 24 AWG bọc cách điện Teflon/PVC (Pitch 12.70mm),LOCKED_VERIFIED

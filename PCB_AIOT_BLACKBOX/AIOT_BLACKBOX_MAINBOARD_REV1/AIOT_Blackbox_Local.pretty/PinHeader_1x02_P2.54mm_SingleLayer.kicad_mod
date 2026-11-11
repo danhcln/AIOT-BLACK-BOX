@@ -1,0 +1,59 @@
+(footprint "PinHeader_1x02_P2.54mm_SingleLayer"
+  (version 20240108)
+  (generator "pcbnew")
+  (generator_version "8.0")
+  (layer "F.Cu")
+  (descr "Verified 1x02 Pin Header P2.54mm for Single-Layer PCB")
+  (tags "header 1x02 2.54mm")
+  (property "Reference" "REF**"
+    (at 0 -2.500 0)
+    (layer "F.SilkS")
+    (uuid "3da95a93-5911-42a4-9811-fd8714a19ee7")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Value" "PinHeader_1x02_P2.54mm_SingleLayer"
+    (at 0 2.500 0)
+    (layer "F.Fab")
+    (uuid "20aff940-8ec8-4971-a3a0-8c9cae39ae92")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (attr through_hole)
+  (fp_rect (start -2.54 -1.35) (end 2.54 1.35) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (uuid "e2ef48b6-4a04-4394-8705-5ddbc86d63bc"))
+  (fp_rect
+    (start -2.800 -1.700)
+    (end 2.800 1.700)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "8fe2508a-f574-4aed-b0a0-b40afd3512e6")
+  )
+  (pad "1" thru_hole rect
+    (at -1.270 0.000)
+    (size 2.100 2.400)
+    (drill 1.000)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "cc655f4c-bb9f-47b6-b4a6-18c25abbe5bb")
+  )
+  (pad "2" thru_hole oval
+    (at 1.270 0.000)
+    (size 2.100 2.400)
+    (drill 1.000)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "4b3f068a-7057-46f1-b920-340f8bc32dd6")
+  )
+)

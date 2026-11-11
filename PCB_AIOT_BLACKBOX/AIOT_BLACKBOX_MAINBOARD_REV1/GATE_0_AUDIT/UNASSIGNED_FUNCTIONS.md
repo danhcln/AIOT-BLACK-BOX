@@ -1,0 +1,39 @@
+# BÁO CÁO CÁC CHỨC NĂNG CHƯA ĐƯỢC LẬP TRÌNH (`UNASSIGNED FUNCTIONS`) — GATE 0
+
+- **Dự án**: THIẾT KẾ HỘP ĐEN AIoT THÔNG MINH PHÂN TÍCH VÀ GHI LẠI SỰ CỐ XE MÁY ĐIỆN
+- **File firmware kiểm tra**: `D:\ĐỒ ÁN 2\filecodemain.cpp` (đã đọc toàn bộ từ dòng 1 đến dòng 516)
+- **Nguyên tắc bắt buộc (RULE 02 & Mục 6)**:
+  - Tuyệt đối **không tự gán GPIO mới** cho các chức năng chưa được khai báo hoặc sử dụng trong `filecodemain.cpp`.
+  - Mọi chức năng xuất hiện trên schematic trình bày cũ nhưng chưa có trong code đều được tách khỏi GPIO của ESP32-S3, đánh dấu `UNASSIGNED` và đặt cờ `no_connect` hợp lệ.
+
+---
+
+## 1. Trả lời 5 câu hỏi bắt buộc cho từng chức năng ngoại vi phụ
+
+| STT | Chức năng | (1) Có mặt trong phần cứng hiện tại không? | (2) Có trong `filecodemain.cpp` không? | (3) Đã chốt GPIO chưa? | (4) Có xung đột với chức năng khác không? | (5) Đề xuất xử lý cho PCB 1 lớp (`AIOT_BLACKBOX_MAINBOARD_REV1`) |
+|---|---|---|---|---|---|---|
+| 1 | **Buzzer cảnh báo (`BZ1`, `Q1 2SC1815`, `R5 1k`)** | Có trong sơ đồ khối thiết kế hộp đen (cảnh báo tai nạn tại chỗ), hiện đang để dự phòng. | **KHÔNG** (`UNASSIGNED`). Không có `#define`, không có `pinMode`/`digitalWrite`/`ledc` cho buzzer trong `filecodemain.cpp`. | **CHƯA CHỐT** (`UNASSIGNED`). | **CÓ XUNG ĐỘT NẾU GIỮ SƠ ĐỒ CŨ**: Sơ đồ cũ nối Buzzer vào `GPIO15`, nhưng firmware hiện tại đã dùng `GPIO15` làm `SIM_RX_PIN` (UART2 RX từ SIM A7682S). Đã tách Buzzer khỏi `GPIO15`. | Giữ cụm transistor `Q1` + `R5` + `BZ1` (hoặc header 2 chân cho buzzer) trên PCB, đưa chân điều khiển `R5` ra **1 chân header/jumper dự phòng (`JP_BUZ`)** gần hàng chân rảnh của ESP32-S3. Khi cập nhật firmware sau này, khuyến nghị nối vào **`GPIO4`** hoặc **`GPIO5`** hoặc **`GPIO14`**. Lưu ý mục tiêu thiết kế khuyến nghị: đặt cách `MPU6050` tối thiểu ~40mm để giảm rung cơ học khi còi kêu. |
+| 2 | **LED trạng thái (`D1`, `R4 330R`)** | Có trên schematic trình bày (`LED_STATUS`). Ngoài ra trên board `ESP32-S3-DevKitC-1` có sẵn RGB LED nội tại `GPIO38` hoặc `GPIO48` tùy revision board. | **KHÔNG** (`UNASSIGNED`). Không có code điều khiển LED trong `filecodemain.cpp`. | **CHƯA CHỐT** (`UNASSIGNED`). | Không xung đột trực tiếp (`GPIO7` trong sơ đồ cũ hiện đang trống trong code), nhưng theo RULE 02 không được tự nối vào `GPIO7` khi code chưa lập trình. | Đưa đầu vào `R4` (`330R`) của `D1` ra **test pad / header đơn `JP_LED`**. Khi lập trình bổ sung, có thể nối jumper ngắn vào **`GPIO7`** (ngay cạnh bên phải `U1`), đảm bảo đi dây 1 lớp `B.Cu` thẳng, không cắt bus UART. |
+| 3 | **Nút nhấn `CANCEL` (`SW1`, `R3 10k`, `C2 100nF`)** | Có trong kịch bản hộp đen (nút hủy cảnh báo giả khi xe ngã nhẹ trong thời gian đếm ngược). | **KHÔNG** (`UNASSIGNED`). Trong `filecodemain.cpp`, tai nạn được chốt ngay sau 2.5s xác nhận nghiêng (`CONFIRM_TIME_MS = 2500`) và gửi SMS/MQTT, chưa lập trình đọc nút hủy. | **CHƯA CHỐT** (`UNASSIGNED`). | Không xung đột trực tiếp (`GPIO6` trong sơ đồ cũ hiện đang trống trong code), nhưng phải để `UNASSIGNED` cho đến khi code hỗ trợ. | Giữ mạch kéo lên `R3 (10k)` + lọc nhiễu `C2 (100nF)` + header 2 chân nối nút nhấn vỏ hộp, đưa ngõ ra tín hiệu ra **pad/header `JP_CANCEL`**. Khi cập nhật code, nối vào **`GPIO6`** (ngay sát cụm `SW1` bên phải `U1`). |
+| 4 | **Ngắt quán tính `MPU6050 INT` (`U2` Pin 8)** | Chân `INT` có sẵn trên module `GY-521 (MPU6050)` (chân số 8 của header 8-pin). | **KHÔNG** (`UNASSIGNED`). Firmware đọc `MPU6050` theo chu kỳ polling 100Hz (`SAMPLE_INTERVAL_MS = 10`) qua I2C `0x69`, không dùng ngắt cứng `INT`. | **CHƯA CHỐT** (`UNASSIGNED`). | **CÓ XUNG ĐỘT NGHIÊM TRỌNG Ở SƠ ĐỒ CŨ**: Sơ đồ cũ nối `MPU6050 INT` vào `GPIO10`, trùng với `SD_CS_PIN = 10` của MicroSD trong firmware. Đã ngắt hoàn toàn `MPU6050 INT` khỏi `GPIO10`. | Để chân `INT` trên footprint 8-pin của `GY-521` ở trạng thái **No-Connect (`NC`)** (hoặc chỉ chừa 1 test pad nhỏ sát chân 8). Không đi dây `INT` về ESP32 để tiết kiệm đường mạch trên PCB 1 lớp `B.Cu` và tránh băng qua bus I2C/SPI. |
+| 5 | **Xung thời gian `GPS PPS` (`U4` Pin 4)** | Phụ thuộc thực tế module `NEO-M8N` (nhiều breakout có 4 chân `VCC, RX, TX, GND`, một số có thêm chân thứ 5 là `PPS`). | **KHÔNG** (`UNASSIGNED`). Firmware đồng bộ thời gian từ chuỗi NMEA qua `TinyGPSPlus` và nạp vào `DS3231` (`rtc.adjust(...)`), không sử dụng xung `PPS`. | **CHƯA CHỐT** (`UNASSIGNED`). | Không xung đột (`GPIO21` đang trống), nhưng không cần thiết cho thuật toán hiện tại. | Để chân `PPS` là **No-Connect (`NC`)**. Cần kiểm tra module `NEO-M8N` thực tế là loại header 4 chân hay 5 chân trước Gate 1. |
+| 6 | **Đo điện áp pin `ADC_VBAT_SENSE` (`GPIO1`)** | Không có đường `VBAT` trực tiếp trên PCB hiện tại vì phần cứng dùng module `LX-2BUPS 5V/3A` xuất sẵn `5V` ổn áp (`UPS+` / `UPS-`). | **KHÔNG** (`UNASSIGNED`). Không có lệnh `analogRead()` nào trong `filecodemain.cpp`. | **CHƯA CHỐT** (`UNASSIGNED`). | Không xung đột trên ESP32 (`GPIO1` thuộc ADC1), nhưng **không thể đo dung lượng pin 18650 từ đường `5V_SYS`** (vì `5V_SYS` đã qua mạch boost của UPS nên luôn giữ ~5.0V cho đến khi cạn ngắt). | Đã gỡ bỏ cầu phân áp ảo `R1/R2` trên schematic. Nếu sau này muốn đo pin thật, phải hàn dây lấy áp trực tiếp từ cực dương cell 18650 (`BAT_RAW`, 3.0V–4.2V) trên `LX-2BUPS` qua cầu chì/trở hạn dòng về connector phụ + cầu phân áp gắn tụ lọc `100nF` vào `GPIO1 (ADC1_CH0)`. Nếu không kéo dây `BAT_RAW`, tuyệt đối bỏ trống. |
+| 7 | **Điều khiển `SIM PWRKEY / STATUS / RST` (`U5` Pin 4, 5)** | Phụ thuộc breakout `A7682S` thực tế (nhiều breakout A7682S đã có mạch tự động bật nguồn `Auto-Power-On` khi cấp `VCC`, và đưa sẵn chân `PWR`/`RST` ra header). | **KHÔNG** (`UNASSIGNED`). Trong `filecodemain.cpp` (dòng 443–458), ESP32 khởi tạo `simSerial.begin(115200, SERIAL_8N1, 15, 16)` và gửi lệnh `AT` trực tiếp mà không kích chân `PWRKEY` hay đọc chân `STATUS`. | **CHƯA CHỐT** (`UNASSIGNED`). | Ở sơ đồ cũ nối vào `GPIO4` và `GPIO5`. Đã ngắt và đặt `no_connect` theo RULE 02. | Kiểm tra thực tế breakout `A7682S`:<br>- Nếu breakout tự khởi động khi cấp nguồn: để `PWRKEY`/`STATUS`/`RST` ở dạng **test pad / jumper header 2.54mm** (mặc định hở).<br>- Tuyệt đối **không nối trực tiếp GPIO 3.3V của ESP32 vào `PWRKEY` hoặc `RST`** của A7682S mà không qua mạch đệm NPN/MOSFET cực thu hở (open-drain), tránh rò áp ngược từ module SIM về ESP32. |
+
+---
+
+## 2. Phân tích quỹ chân GPIO an toàn của `ESP32-S3-DevKitC-1 N16R8` (Tham khảo khi mở rộng)
+
+Nếu người dùng quyết định bổ sung code cho các chức năng `UNASSIGNED` ở các phiên bản sau, cần tuân thủ nghiêm ngặt phân vùng chân của module **`ESP32-S3-WROOM-1-N16R8` (16MB Quad SPI Flash + 8MB Octal SPI PSRAM)**:
+
+### A. Các chân TUYỆT ĐỐI KHÔNG DÙNG (Cấm gán thêm):
+1. **`GPIO35`, `GPIO36`, `GPIO37`**: Đã bị chiếm dụng nội bộ bởi **Octal PSRAM (R8)** bên trong module `N16R8`. Sử dụng các chân này sẽ làm treo chip (`Guru Meditation Error` / lỗi bộ nhớ PSRAM).
+2. **`GPIO0`, `GPIO3`, `GPIO45`, `GPIO46`**: Các chân **Strapping Pins** quyết định chế độ Boot, điện áp Flash/PSRAM (`VDD_SPI`) và JTAG/ROM log. Gắn tải kéo lên/kéo xuống sai mức logic lúc cấp nguồn sẽ khiến ESP32-S3 không boot được.
+3. **`GPIO19`, `GPIO20`**: Chân **USB D- / D+** nội bộ.
+4. **`GPIO43`, `GPIO44`**: Chân **UART0 (`TXD0` / `RXD0`)** đang dùng cho `Serial.begin(115200)` để debug và nạp code.
+5. **`GPIO8`, `GPIO9`, `GPIO10`, `GPIO11`, `GPIO12`, `GPIO13`, `GPIO15`, `GPIO16`, `GPIO17`, `GPIO18`**: 10 chân GPIO đang hoạt động chính thức trong `filecodemain.cpp`.
+
+### B. Các chân GPIO AN TOÀN khuyến nghị dự phòng (khi người dùng phê duyệt nâng cấp firmware):
+- **Bên trái DevKitC-1**: `GPIO1` (ưu tiên ADC1 đo pin), `GPIO2` (ADC1), `GPIO14` (ngay dưới `GPIO10`, rất thuận tiện đi dây 1 lớp).
+- **Bên phải DevKitC-1**: `GPIO4`, `GPIO5`, `GPIO6`, `GPIO7`, `GPIO21`, `GPIO39`, `GPIO40`, `GPIO41`, `GPIO42`, `GPIO47` (nằm cùng phía phải với cụm nút nhấn `CANCEL`, `LED`, `BUZZER`, giúp đi dây trên 1 lớp `B.Cu` không cần nhảy dây qua trung tâm board).
+

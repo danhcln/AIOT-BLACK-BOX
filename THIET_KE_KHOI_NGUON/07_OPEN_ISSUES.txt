@@ -1,0 +1,145 @@
+================================================================================
+AIOT SMART BLACK BOX - POWER SUPPLY SYSTEM OPEN ISSUES & HARDWARE ASSUMPTIONS
+DOCUMENT ID: 07_OPEN_ISSUES.txt
+PROJECT: AIOT_BLACKBOX_POWER_SUPPLY
+REVISION: REV 1.0
+DATE: 2026-10-18
+STATUS: DESIGN COMPLETE FOR ENGINEERING REVIEW - HARDWARE VERIFICATION REQUIRED
+================================================================================
+
+The power supply schematic has been designed with rigorous conservative engineering,
+planar topology, and zero ERC errors. However, because this is an actual hardware
+product intended for physical PCB manufacturing and deployment on electric motorcycles,
+the following engineering assumptions MUST be resolved through physical bench testing
+before freezing the final PCB artwork.
+
+--------------------------------------------------------------------------------
+ISSUE A: A7682S CELLULAR BREAKOUT VCC VOLTAGE & TOPOLOGY VERIFICATION
+--------------------------------------------------------------------------------
+Status: BLOCKED PENDING PHYSICAL MODULE BENCH VERIFICATION
+Impact: Critical (Component destruction risk if overvolted)
+Details:
+- The user's physical cellular module is marked A7682S with a 4R7 inductor onboard.
+- A7682S IC core requires 3.4V to 4.2V (nominal 3.8V).
+- Some commercial breakout boards feature an onboard step-down buck converter or LDO
+  allowing direct 5V input, while others are pass-through modules requiring regulated 3.8V.
+Mitigation Implemented in Schematic:
+- Dual hardware architecture on Sheet 4:
+  * Option A: 5V pass-through via P-channel MOSFET switch (AO3401A).
+  * Option B: Dedicated 3.8V / 3.0A synchronous buck converter (TPS62130RGTR).
+  * Selection Jumper JP1 (3-pin 2.54mm header) left UNPOPULATED by default.
+Action Required:
+- Measure physical A7682S breakout on bench with lab power supply.
+- Inspect circuit traces between external VCC pin and 4R7 inductor.
+- Select and populate JP1 (1-2 for 5V, 2-3 for 3.8V).
+
+--------------------------------------------------------------------------------
+ISSUE B: 18650 BATTERY CELL EXACT MODEL & CONTINUOUS DISCHARGE RATING
+--------------------------------------------------------------------------------
+Status: PROVISIONALLY SIZED (Using 3000mAh, 10A Continuous Discharge Spec)
+Impact: High (Battery cycle life and high-current voltage sag)
+Details:
+- Under 3.00V cutoff and 5V / 2.74A peak load, the boost converter draws 5.04A.
+- Low-grade generic 18650 cells (rated 2A-3A) will suffer excessive internal
+  resistance voltage drop (IR sag > 0.5V), causing premature cutoff.
+Action Required:
+- Procure high-drain, authentic 18650 cells (e.g., Samsung INR18650-30Q, LG HG2,
+  or Panasonic NCR18650GA) with verified >= 10A continuous rating and DC-IR < 25 mOhm.
+- Verify cell safety vents and physical dimensions.
+
+--------------------------------------------------------------------------------
+ISSUE C: VEHICLE DC-DC CONVERTER TRANSIENT SUPPRESSION & LOAD DUMP
+--------------------------------------------------------------------------------
+Status: ARCHITECTURALLY ISOLATED (VEHICLE_5V_IN Protected by TVS & OVP)
+Impact: High (Automotive electrical transients)
+Details:
+- The vehicle main traction battery operates at 48V, 60V, or 72V DC.
+- The external vehicle step-down DC-DC converter stepping traction battery down to 5V
+  must withstand ISO 7637-2 / ISO 16750-2 automotive voltage spikes and load dumps.
+Mitigation Implemented in Schematic:
+- VEHICLE_5V_IN features PTC Fuse F1 (2.0A hold / 4.0A trip), SMAJ5.0A TVS diode D1,
+  and TPS2121 internal overvoltage protection cutoff at 5.80V.
+Action Required:
+- Verify that the physical vehicle DC-DC converter output remains stable between 4.8V
+  and 5.2V across motorcycle acceleration and regenerative braking.
+
+--------------------------------------------------------------------------------
+ISSUE D: PERIPHERAL MODULE VOLTAGE COMPATIBILITY (3.3V vs 5V)
+--------------------------------------------------------------------------------
+Status: ISOLATED ON DEDICATED 3V3_SYS RAIL
+Impact: Medium (Peripheral I2C/SPI signal integrity)
+Details:
+- MPU6050 (GY-521), DS3231, OLED, and NEO-M8N breakout boards often contain cheap
+  onboard XC6206 3.3V LDOs. Supplying 3.3V into an onboard 3.3V LDO can cause LDO
+  dropout voltage collapse down to 3.0V.
+Mitigation Implemented in Schematic:
+- Dedicated TPS62162 1.0A buck converter generates an independent, high-current
+  3V3_SYS rail for logic and peripherals.
+Action Required:
+- Verify whether physical breakouts have LDO bypass jumpers or direct 3.3V pins.
+
+--------------------------------------------------------------------------------
+ISSUE E: MICROSD WRITE CONCURRENCY WITH 4G CELLULAR TRANSMISSION
+--------------------------------------------------------------------------------
+Status: MITIGATED VIA BUFFER CAPACITORS & PEAK POWER BUDGET
+Impact: Medium (SD card corruption risk if supply dips below 2.7V)
+Details:
+- Flash block erase operations on MicroSD cards cause sharp current spikes up to 100mA.
+- If concurrent with a 2.0A 4G transmission burst, total 5V_SYS load peaks at 2.74A.
+Mitigation Implemented in Schematic:
+- TPS61088 boost converter rated for 3.5A continuous / 5A peak.
+- 1000uF polymer capacitor C35 on cellular rail absorbs 2A RF bursts locally,
+  preventing droop from propagating back to 5V_SYS or MicroSD.
+Action Required:
+- Execute dual-stress bench test: write continuous 512KB binary telemetry files to
+  MicroSD while pulsing cellular load at 2.0A / 217Hz.
+
+--------------------------------------------------------------------------------
+ISSUE F: 4-LAYER PCB COPPER POUR & THERMAL VIAS UNDER QFN PACKAGES
+--------------------------------------------------------------------------------
+Status: EMBEDDED IN SCHEMATIC FOOTPRINTS
+Impact: High (Thermal derating at high ambient temperatures)
+Details:
+- TPS61088 (VQFN-20), BQ25895 (WQFN-24), and TPS62130 (VQFN-16) utilize exposed
+  thermal pads for junction heat transfer.
+Action Required:
+- Enforce 4-layer PCB stackup (Top 1oz, Inner1 1oz GND, Inner2 1oz Power, Bottom 1oz).
+- Place array of 0.3mm diameter thermal vias with 1.0mm pitch directly inside the
+  exposed pad paste mask, connecting to the solid internal ground plane.
+
+--------------------------------------------------------------------------------
+ISSUE G: CELLULAR MODULE BURST CURRENT EMPIRICAL BENCHMARK
+--------------------------------------------------------------------------------
+Status: CONSERVATIVELY DESIGNED FOR 2.0A BURST
+Impact: Verified Design Target
+Details:
+- Cellular burst profile: 2.0A peak, 577us pulse duration every 4.615ms.
+Action Required:
+- Measure actual physical A7682S current with a high-bandwidth current probe
+  (e.g., Tektronix TCP0030A) during live 4G LTE attach and data transmission.
+
+--------------------------------------------------------------------------------
+ISSUE H: BQ25895 STANDALONE vs I2C HOST FIRMWARE CONTROL
+--------------------------------------------------------------------------------
+Status: FULLY AUTONOMOUS WITH OPTIONAL I2C OVERRIDE
+Impact: Low (Operates safely without firmware)
+Details:
+- BQ25895 ILIM pin is hardwired with 158 Ohm resistor for autonomous 3.25A input limit.
+- Watchdog timer: BQ25895 features a 160-second watchdog timer in register 0x07.
+  If I2C is not serviced, it resets to default autonomous state.
+Action Required:
+- Implement ESP32 I2C driver in main application firmware to read battery voltage,
+  charging current, and VBUS telemetry, while periodically resetting the watchdog timer.
+
+--------------------------------------------------------------------------------
+ISSUE I: BATTERY HOLDER CONTACT RESISTANCE UNDER 5A PEAK CURRENT
+--------------------------------------------------------------------------------
+Status: CONNECTOR RATED AT 10A (JST VH 3.96mm)
+Impact: Medium (Voltage drop in battery wiring)
+Details:
+- Cheap consumer spring-loaded battery holders have contact resistance up to 100-200 mOhm.
+- At 5.04A peak current, 150 mOhm contact resistance creates a 0.75V voltage drop!
+Action Required:
+- Use high-current industrial battery contacts (beryllium copper with gold/nickel plating)
+  or welded nickel strips with 18AWG silicone stranded wire directly to JST VH connector J3.
+================================================================================

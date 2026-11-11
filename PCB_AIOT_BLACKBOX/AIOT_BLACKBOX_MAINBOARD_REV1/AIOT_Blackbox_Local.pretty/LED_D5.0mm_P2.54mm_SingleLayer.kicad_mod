@@ -1,0 +1,61 @@
+(footprint "LED_D5.0mm_P2.54mm_SingleLayer"
+  (version 20240108)
+  (generator "pcbnew")
+  (generator_version "8.0")
+  (layer "F.Cu")
+  (descr "Verified 5mm THT LED (Pad 1=K, Pad 2=A) for Single-Layer PCB")
+  (tags "LED 5mm THT")
+  (property "Reference" "REF**"
+    (at 0 -3.800 0)
+    (layer "F.SilkS")
+    (uuid "082b814f-e1c0-4d53-9e99-f60cff2b7310")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (property "Value" "LED_D5.0mm_P2.54mm_SingleLayer"
+    (at 0 3.800 0)
+    (layer "F.Fab")
+    (uuid "32d73c19-0c39-4860-a56b-e14292e65cae")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15)
+      )
+    )
+  )
+  (attr through_hole)
+  (fp_circle (center 0 0) (end 2.8 0) (stroke (width 0.15) (type default)) (fill none) (layer "F.SilkS") (uuid "c5b91b55-3d18-414e-b048-b126f38b5ee3"))
+  (fp_text user "K" (at -2.8 2.2 0) (layer "F.SilkS") (uuid "fb61eae3-9efa-414d-9d0c-d16df7aecc29") (effects (font (size 0.9 0.9) (thickness 0.15))))
+  (fp_text user "A" (at 2.8 2.2 0) (layer "F.SilkS") (uuid "8a7337cd-2ca0-4d9f-ae4e-f7a0c686eeb6") (effects (font (size 0.9 0.9) (thickness 0.15))))
+  (fp_rect
+    (start -3.250 -3.250)
+    (end 3.250 3.250)
+    (stroke
+      (width 0.05)
+      (type default)
+    )
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "65f12d14-8af4-41c9-ac3e-b15c57a82aa9")
+  )
+  (pad "1" thru_hole rect
+    (at -1.270 0.000)
+    (size 2.000 2.200)
+    (drill 0.900)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "64d1cbc0-9794-47fd-b9fb-4fb2df0aad3e")
+  )
+  (pad "2" thru_hole oval
+    (at 1.270 0.000)
+    (size 2.000 2.200)
+    (drill 0.900)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no)
+    (uuid "680375a5-ab26-4a9e-8e76-774eae184a26")
+  )
+)

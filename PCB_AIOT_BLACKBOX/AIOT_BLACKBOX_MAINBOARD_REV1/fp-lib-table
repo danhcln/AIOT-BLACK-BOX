@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AIOT_Blackbox_Local")(type "KiCad")(uri "${KIPRJMOD}/AIOT_Blackbox_Local.pretty")(options "")(descr "Verified Project Local Single-Layer PCB Footprints"))
+)

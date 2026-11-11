@@ -1,0 +1,16 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "test-rot-uuid")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:R"
+			(pin passive line (at 2 3 270) (length 2.54) (name "~" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+		)
+	)
+	(symbol (lib_id "Device:R") (at 100 100 0) (unit 1) (uuid "r0") (property "Reference" "R0" (at 100 100 0)) (property "Value" "R" (at 100 100 0)) (pin "1" (uuid "p1")))
+	(symbol (lib_id "Device:R") (at 100 100 90) (unit 1) (uuid "r90") (property "Reference" "R90" (at 100 100 0)) (property "Value" "R" (at 100 100 0)) (pin "1" (uuid "p3")))
+	(symbol (lib_id "Device:R") (at 100 100 180) (unit 1) (uuid "r180") (property "Reference" "R180" (at 100 100 0)) (property "Value" "R" (at 100 100 0)) (pin "1" (uuid "p5")))
+	(symbol (lib_id "Device:R") (at 100 100 270) (unit 1) (uuid "r270") (property "Reference" "R270" (at 100 100 0)) (property "Value" "R" (at 100 100 0)) (pin "1" (uuid "p7")))
+)

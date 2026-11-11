@@ -1,0 +1,283 @@
+** Drc report for AIOT_BLACKBOX_MAINBOARD_REV1.kicad_pcb **
+** Created on 2026-11-10T10:42:25 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 0 DRC violations **
+
+** Found 64 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(84.4600 mm, 58.0000 mm): PTH pad 1 [SIM_PWR] of C3
+    @(77.2700 mm, 58.0000 mm): PTH pad 2 [SIM_PWR] of NT1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(95.4600 mm, 58.0000 mm): PTH pad 1 [SIM_PWR] of C4
+    @(84.4600 mm, 58.0000 mm): PTH pad 1 [SIM_PWR] of C3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(95.4600 mm, 68.0000 mm): PTH pad 1 [SIM_PWR] of U5
+    @(95.4600 mm, 58.0000 mm): PTH pad 1 [SIM_PWR] of C4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(98.0000 mm, 50.0000 mm): PTH pad 1 [SIM_PWR] of TP3
+    @(95.4600 mm, 58.0000 mm): PTH pad 1 [SIM_PWR] of C4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(60.0000 mm, 59.4600 mm): PTH pad 2 [GND] of J2
+    @(68.0000 mm, 64.0000 mm): PTH pad 1 [GND] of TP4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.7300 mm, 76.0000 mm): PTH pad 2 [GND] of U6
+    @(69.8100 mm, 76.0000 mm): PTH pad 4 [GND] of U6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(69.8100 mm, 76.0000 mm): PTH pad 4 [GND] of U6
+    @(68.0000 mm, 64.0000 mm): PTH pad 1 [GND] of TP4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(74.3500 mm, 100.0000 mm): PTH pad 6 [GND] of U3
+    @(89.6500 mm, 96.0000 mm): PTH pad 2 [GND] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(80.5400 mm, 76.0000 mm): PTH pad 2 [GND] of C1
+    @(69.8100 mm, 76.0000 mm): PTH pad 4 [GND] of U6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(80.5400 mm, 76.0000 mm): PTH pad 2 [GND] of C1
+    @(89.6500 mm, 96.0000 mm): PTH pad 2 [GND] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.5400 mm, 58.0000 mm): PTH pad 2 [GND] of C3
+    @(80.5400 mm, 76.0000 mm): PTH pad 2 [GND] of C1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(98.1900 mm, 116.5000 mm): PTH pad 1 [GND] of U7
+    @(89.6500 mm, 96.0000 mm): PTH pad 2 [GND] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.5400 mm, 58.0000 mm): PTH pad 2 [GND] of C4
+    @(89.5400 mm, 58.0000 mm): PTH pad 2 [GND] of C3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.5400 mm, 58.0000 mm): PTH pad 2 [GND] of C4
+    @(105.6200 mm, 68.0000 mm): PTH pad 5 [GND] of U5
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(105.6200 mm, 68.0000 mm): PTH pad 5 [GND] of U5
+    @(110.7300 mm, 66.5000 mm): PTH pad 1 [GND] of D1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.7300 mm, 66.5000 mm): PTH pad 1 [GND] of D1
+    @(119.4600 mm, 80.0000 mm): PTH pad 2 [GND] of U4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(118.5400 mm, 60.0000 mm): PTH pad 2 [GND] of C2
+    @(110.7300 mm, 66.5000 mm): PTH pad 1 [GND] of D1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(118.5400 mm, 60.0000 mm): PTH pad 2 [GND] of C2
+    @(117.2700 mm, 47.0000 mm): PTH pad 2 [GND] of SW1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(133.4600 mm, 63.0000 mm): PTH pad 1 [GND] of Q1
+    @(118.5400 mm, 60.0000 mm): PTH pad 2 [GND] of C2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(141.0800 mm, 71.0000 mm): PTH pad 2 [GND] of R6
+    @(133.4600 mm, 63.0000 mm): PTH pad 1 [GND] of Q1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(144.3500 mm, 104.0000 mm): PTH pad 6 [GND] of J1
+    @(141.0800 mm, 71.0000 mm): PTH pad 2 [GND] of R6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.3000 mm, 111.6700 mm): PTH pad 22 [GND] of U1
+    @(144.3500 mm, 104.0000 mm): PTH pad 6 [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(182.7000 mm, 58.3300 mm): PTH pad 23 [GND] of U1
+    @(141.0800 mm, 71.0000 mm): PTH pad 2 [GND] of R6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(131.6500 mm, 104.0000 mm): PTH pad 1 [/SD_CS_GPIO10] of J1
+    @(157.3000 mm, 96.4300 mm): PTH pad 16 [/SD_CS_GPIO10] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(134.1900 mm, 104.0000 mm): PTH pad 2 [Net-(J1-SCK)] of J1
+    @(157.3000 mm, 101.5100 mm): PTH pad 18 [Net-(J1-SCK)] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(136.7300 mm, 104.0000 mm): PTH pad 3 [Net-(J1-MOSI)] of J1
+    @(157.3000 mm, 98.9700 mm): PTH pad 17 [Net-(J1-MOSI)] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(139.2700 mm, 104.0000 mm): PTH pad 4 [Net-(J1-MISO)] of J1
+    @(157.3000 mm, 104.0500 mm): PTH pad 19 [Net-(J1-MISO)] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(60.0000 mm, 64.5400 mm): PTH pad 1 [5V_SYS] of J2
+    @(62.1900 mm, 76.0000 mm): PTH pad 1 [5V_SYS] of U6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(68.0000 mm, 56.0000 mm): PTH pad 1 [5V_SYS] of TP1
+    @(74.7300 mm, 58.0000 mm): PTH pad 1 [5V_SYS] of NT1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(68.0000 mm, 56.0000 mm): PTH pad 1 [5V_SYS] of TP1
+    @(60.0000 mm, 64.5400 mm): PTH pad 1 [5V_SYS] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.1900 mm, 48.0000 mm): PTH pad 1 [5V_SYS] of BZ1
+    @(141.8100 mm, 104.0000 mm): PTH pad 5 [5V_SYS] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(132.1900 mm, 48.0000 mm): PTH pad 1 [5V_SYS] of BZ1
+    @(74.7300 mm, 58.0000 mm): PTH pad 1 [5V_SYS] of NT1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(141.8100 mm, 104.0000 mm): PTH pad 5 [5V_SYS] of J1
+    @(157.3000 mm, 109.1300 mm): PTH pad 21 [5V_SYS] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.9200 mm, 66.5000 mm): PTH pad 1 [/LED_STATUS_GPIO7] of R4
+    @(157.3000 mm, 73.5700 mm): PTH pad 7 [/LED_STATUS_GPIO7] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(113.2700 mm, 66.5000 mm): PTH pad 2 [Net-(D1-A)] of D1
+    @(127.0800 mm, 66.5000 mm): PTH pad 2 [Net-(D1-A)] of R4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(67.2700 mm, 76.0000 mm): PTH pad 3 [3V3_SYS] of U6
+    @(75.4600 mm, 76.0000 mm): PTH pad 1 [3V3_SYS] of C1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(75.4600 mm, 76.0000 mm): PTH pad 1 [3V3_SYS] of C1
+    @(78.0000 mm, 70.0000 mm): PTH pad 1 [3V3_SYS] of TP2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(87.1100 mm, 96.0000 mm): PTH pad 1 [3V3_SYS] of U2
+    @(71.8100 mm, 100.0000 mm): PTH pad 5 [3V3_SYS] of U3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(87.1100 mm, 96.0000 mm): PTH pad 1 [3V3_SYS] of U2
+    @(75.4600 mm, 76.0000 mm): PTH pad 1 [3V3_SYS] of C1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.7300 mm, 116.5000 mm): PTH pad 2 [3V3_SYS] of U7
+    @(102.3500 mm, 96.0000 mm): PTH pad 7 [3V3_SYS] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.3500 mm, 96.0000 mm): PTH pad 7 [3V3_SYS] of U2
+    @(87.1100 mm, 96.0000 mm): PTH pad 1 [3V3_SYS] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(102.3500 mm, 96.0000 mm): PTH pad 7 [3V3_SYS] of U2
+    @(116.9200 mm, 80.0000 mm): PTH pad 1 [3V3_SYS] of U4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.9200 mm, 80.0000 mm): PTH pad 1 [3V3_SYS] of U4
+    @(110.9200 mm, 53.5000 mm): PTH pad 1 [3V3_SYS] of R3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(134.9200 mm, 86.5000 mm): PTH pad 1 [3V3_SYS] of R_PU1
+    @(116.9200 mm, 80.0000 mm): PTH pad 1 [3V3_SYS] of U4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(134.9200 mm, 93.5000 mm): PTH pad 1 [3V3_SYS] of R_PU2
+    @(134.9200 mm, 86.5000 mm): PTH pad 1 [3V3_SYS] of R_PU1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(92.1900 mm, 96.0000 mm): PTH pad 3 [/I2C_SCL_GPIO9] of U2
+    @(66.7300 mm, 100.0000 mm): PTH pad 3 [/I2C_SCL_GPIO9] of U3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(103.2700 mm, 116.5000 mm): PTH pad 3 [/I2C_SCL_GPIO9] of U7
+    @(92.1900 mm, 96.0000 mm): PTH pad 3 [/I2C_SCL_GPIO9] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(103.2700 mm, 116.5000 mm): PTH pad 3 [/I2C_SCL_GPIO9] of U7
+    @(145.0800 mm, 93.5000 mm): PTH pad 2 [/I2C_SCL_GPIO9] of R_PU2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.3000 mm, 93.8900 mm): PTH pad 15 [/I2C_SCL_GPIO9] of U1
+    @(145.0800 mm, 93.5000 mm): PTH pad 2 [/I2C_SCL_GPIO9] of R_PU2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.7300 mm, 96.0000 mm): PTH pad 4 [/I2C_SDA_GPIO8] of U2
+    @(69.2700 mm, 100.0000 mm): PTH pad 4 [/I2C_SDA_GPIO8] of U3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(105.8100 mm, 116.5000 mm): PTH pad 4 [/I2C_SDA_GPIO8] of U7
+    @(94.7300 mm, 96.0000 mm): PTH pad 4 [/I2C_SDA_GPIO8] of U2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(105.8100 mm, 116.5000 mm): PTH pad 4 [/I2C_SDA_GPIO8] of U7
+    @(145.0800 mm, 86.5000 mm): PTH pad 2 [/I2C_SDA_GPIO8] of R_PU1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.3000 mm, 86.2700 mm): PTH pad 12 [/I2C_SDA_GPIO8] of U1
+    @(145.0800 mm, 86.5000 mm): PTH pad 2 [/I2C_SDA_GPIO8] of R_PU1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(122.0000 mm, 80.0000 mm): PTH pad 3 [/GPS_RX_GPIO18] of U4
+    @(157.3000 mm, 83.7300 mm): PTH pad 11 [/GPS_RX_GPIO18] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(124.5400 mm, 80.0000 mm): PTH pad 4 [/GPS_TX_GPIO17] of U4
+    @(157.3000 mm, 81.1900 mm): PTH pad 10 [/GPS_TX_GPIO17] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(136.0000 mm, 61.0950 mm): PTH pad 2 [Net-(BZ1--)] of Q1
+    @(139.8100 mm, 48.0000 mm): PTH pad 2 [Net-(BZ1--)] of BZ1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(113.4600 mm, 60.0000 mm): PTH pad 1 [Net-(U1-GPIO6)] of C2
+    @(121.0800 mm, 53.5000 mm): PTH pad 2 [Net-(U1-GPIO6)] of R3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(121.0800 mm, 53.5000 mm): PTH pad 2 [Net-(U1-GPIO6)] of R3
+    @(114.7300 mm, 47.0000 mm): PTH pad 1 [Net-(U1-GPIO6)] of SW1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.3000 mm, 71.0300 mm): PTH pad 6 [Net-(U1-GPIO6)] of U1
+    @(121.0800 mm, 53.5000 mm): PTH pad 2 [Net-(U1-GPIO6)] of R3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(100.5400 mm, 68.0000 mm): PTH pad 3 [/SIM_TX_GPIO16] of U5
+    @(157.3000 mm, 78.6500 mm): PTH pad 9 [/SIM_TX_GPIO16] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(103.0800 mm, 68.0000 mm): PTH pad 4 [/SIM_RX_GPIO15] of U5
+    @(157.3000 mm, 76.1100 mm): PTH pad 8 [/SIM_RX_GPIO15] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(149.0000 mm, 68.0800 mm): PTH pad 1 [/BUZZER_CTRL_GPIO5] of R5
+    @(157.3000 mm, 68.4900 mm): PTH pad 5 [/BUZZER_CTRL_GPIO5] of U1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(138.5400 mm, 63.0000 mm): PTH pad 3 [Net-(Q1-B)] of Q1
+    @(130.9200 mm, 71.0000 mm): PTH pad 1 [Net-(Q1-B)] of R6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(149.0000 mm, 57.9200 mm): PTH pad 2 [Net-(Q1-B)] of R5
+    @(138.5400 mm, 63.0000 mm): PTH pad 3 [Net-(Q1-B)] of Q1
+
+** Found 3 Footprint errors **
+[net_conflict]: No pad found for pin 6 (Net-(U4-ANT)) in schematic
+    Local override; warning
+    @(122.0000 mm, 80.0000 mm): Footprint U4
+[net_conflict]: No pad found for pin 7 (Net-(U5-ANT)) in schematic
+    Local override; warning
+    @(100.5400 mm, 68.0000 mm): Footprint U5
+[net_conflict]: No pad found for pin 6 in schematic
+    Local override; warning
+    @(100.5400 mm, 68.0000 mm): Footprint U5
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
